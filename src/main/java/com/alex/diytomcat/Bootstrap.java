@@ -1,10 +1,15 @@
 package com.alex.diytomcat;
 
+import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.NetUtil;
+import cn.hutool.core.util.StrUtil;
+import com.alex.diytomcat.http.Request;
+import com.alex.diytomcat.http.Response;
+import com.alex.diytomcat.util.Constants;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -22,25 +27,39 @@ public class Bootstrap {
             ServerSocket ss = new ServerSocket(port);
 
             while (true) {
+                // wrap Request entity
                 Socket s = ss.accept();
-                InputStream is = s.getInputStream();
-                int bufferSize = 1024;
-                byte[] buffer = new byte[bufferSize];
-                is.read(buffer);
-                String requestString = new String(buffer, "utf-8");
-                System.out.println("Request is \r\n" + requestString);
+                Request request = new Request(s);
+                System.out.println("Request is \r\n" + request.getRequestString());
 
-                OutputStream os = s.getOutputStream();
-                String response_head = "HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n\r\n";
-                String responseString = "Hello From Alex's DIY Tomcat";
-                responseString = response_head + responseString;
-                os.write(responseString.getBytes());
-                os.flush();
-                s.close();
+                // wrap Response entity
+                Response response = new Response();
+                String html = "Hello From Alex's DIY Tomcat";
+                response.getWriter().println(html);
+
+                handle200(s, response);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
+
+    private static void handle200(Socket s, Response response) throws IOException {
+
+        String contentType = response.getContentType();
+        String headerText = Constants.response_header_200;
+        headerText = StrUtil.format(headerText, contentType);
+
+        byte[] header = headerText.getBytes();
+        byte[] body = response.getBody();
+
+        byte[] responseBytes = new byte[header.length + body.length];
+        ArrayUtil.copy(header, 0, responseBytes, 0, header.length);
+        ArrayUtil.copy(body, 0, responseBytes, header.length, body.length);
+
+        OutputStream os = s.getOutputStream();
+        os.write(responseBytes);
+        s.close();
     }
 }
