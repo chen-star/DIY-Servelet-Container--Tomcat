@@ -28,6 +28,13 @@ public class TestTomcat {
         Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat"));
     }
 
+    @Test
+    public void testaHtml() {
+        String html = getContentString("/a.html");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat -- [HTML]"));
+    }
+
     private String getContentString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String content = MiniBrowser.getContentString(url);

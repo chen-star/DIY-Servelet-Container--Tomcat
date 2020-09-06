@@ -3,6 +3,7 @@ package com.alex.diytomcat.http;
 import cn.hutool.core.util.StrUtil;
 import com.alex.diytomcat.util.MiniBrowser;
 import lombok.Getter;
+import lombok.extern.log4j.Log4j2;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,6 +14,7 @@ import java.nio.charset.StandardCharsets;
  * @author : alexchen
  * @created : 9/5/20, Saturday
  **/
+@Log4j2
 public class Request {
 
     @Getter
