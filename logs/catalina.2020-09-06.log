@@ -1,0 +1,30 @@
+[[32mINFO [m] 2020-09-06 01:10:48,105 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 01:10:48,109 Bootstrap.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 01:10:48,110 Bootstrap.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 01:10:48,110 Bootstrap.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 01:10:48,110 Bootstrap.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 01:10:52,579 Bootstrap.main() - Request uri=/
+[[32mINFO [m] 2020-09-06 01:10:52,586 Bootstrap.main() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 01:10:52,597 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 01:10:53,602 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 01:10:54,603 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 01:11:23,712 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 01:11:23,716 Bootstrap.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 01:11:23,716 Bootstrap.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 01:11:23,717 Bootstrap.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 01:11:43,074 Bootstrap.main() - Request uri=/
+[[32mINFO [m] 2020-09-06 01:11:43,081 Bootstrap.main() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 01:11:43,091 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 01:11:44,092 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 01:11:45,094 Bootstrap.main() - Request uri=/timeConsume.html

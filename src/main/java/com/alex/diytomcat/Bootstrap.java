@@ -1,6 +1,7 @@
 package com.alex.diytomcat;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.system.SystemUtil;
@@ -60,6 +61,11 @@ public class Bootstrap {
                     if (file.exists()) {
                         String fileContent = FileUtil.readUtf8String(file);
                         response.getWriter().println(fileContent);
+
+                        if(fileName.equals("timeConsume.html")){
+                            ThreadUtil.sleep(1000);
+                        }
+
                     } else {
                         response.getWriter().println("404 File Not Found");
                     }
