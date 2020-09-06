@@ -60,7 +60,7 @@ public class TestTomcat {
 
         long duration = timeInterval.intervalMs();
 
-        Assert.assertTrue(duration > 3000);
+        Assert.assertTrue(duration < 3000);
     }
 
     private String getContentString(String uri) {

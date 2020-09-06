@@ -8,6 +8,7 @@ import cn.hutool.system.SystemUtil;
 import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
 import com.alex.diytomcat.util.Constants;
+import com.alex.diytomcat.util.ThreadPoolUtil;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.File;
@@ -22,6 +23,8 @@ import java.util.Set;
 @Log4j2
 public class Bootstrap {
 
+    private static final int PORT = 18080;
+
     public static void main(String[] args) {
 
         log.info("Tomcat starts up");
@@ -29,50 +32,62 @@ public class Bootstrap {
         try {
             logJVM();
 
-            int port = 18080;
-
 //            if (!NetUtil.isUsableLocalPort(port)) {
 //                System.out.println(port + " is in use");
 //                return;
 //            }
-            ServerSocket ss = new ServerSocket(port);
+            ServerSocket ss = new ServerSocket(PORT);
 
             while (true) {
-                // wrap Request entity
-                Socket s = ss.accept();
-                Request request = new Request(s);
-                System.out.println("Request is \r\n" + request.getRequestString());
+                // receive a request
+                final Socket s = ss.accept();
 
-                // wrap Response entity
-                Response response = new Response();
+                Runnable r = new Runnable() {
 
-                String uri = request.getUri();
-                if (StrUtil.isEmpty(uri)) {
-                    continue;
-                }
-                log.info("Request uri={}", uri);
+                    @Override
+                    public void run() {
+                        try {
+                            // wrap Request entity
+                            Request request = new Request(s);
+                            System.out.println("Request is \r\n" + request.getRequestString());
 
-                if (uri.equals("/")) {
-                    String html = "Hello From Alex's DIY Tomcat";
-                    response.getWriter().println(html);
-                } else {
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(Constants.rootFolder, fileName);
-                    if (file.exists()) {
-                        String fileContent = FileUtil.readUtf8String(file);
-                        response.getWriter().println(fileContent);
+                            // wrap Response entity
+                            Response response = new Response();
 
-                        if(fileName.equals("timeConsume.html")){
-                            ThreadUtil.sleep(1000);
+                            String uri = request.getUri();
+                            if (StrUtil.isEmpty(uri)) {
+                                return;
+                            }
+                            log.info("Request uri={}", uri);
+
+                            if (uri.equals("/")) {
+                                String html = "Hello From Alex's DIY Tomcat";
+                                response.getWriter().println(html);
+                            } else {
+                                String fileName = StrUtil.removePrefix(uri, "/");
+                                File file = FileUtil.file(Constants.rootFolder, fileName);
+                                if (file.exists()) {
+                                    String fileContent = FileUtil.readUtf8String(file);
+                                    response.getWriter().println(fileContent);
+
+                                    if (fileName.equals("timeConsume.html")) {
+                                        ThreadUtil.sleep(1000);
+                                    }
+
+                                } else {
+                                    response.getWriter().println("404 File Not Found");
+                                }
+                            }
+
+
+                            handle200(s, response);
+                        } catch (IOException e) {
+                            log.error(e.getMessage());
                         }
-
-                    } else {
-                        response.getWriter().println("404 File Not Found");
                     }
-                }
+                };
 
-
-                handle200(s, response);
+                ThreadPoolUtil.run(r);
             }
         } catch (IOException e) {
             log.error(e.getMessage());

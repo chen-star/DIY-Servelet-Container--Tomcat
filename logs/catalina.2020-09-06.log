@@ -28,3 +28,28 @@
 [[32mINFO [m] 2020-09-06 01:11:43,091 Bootstrap.main() - Request uri=/timeConsume.html
 [[32mINFO [m] 2020-09-06 01:11:44,092 Bootstrap.main() - Request uri=/timeConsume.html
 [[32mINFO [m] 2020-09-06 01:11:45,094 Bootstrap.main() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 15:13:10,500 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 15:13:10,505 Bootstrap.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 15:13:10,505 Bootstrap.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 15:13:10,505 Bootstrap.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 15:13:10,505 Bootstrap.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 15:13:10,506 Bootstrap.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 15:13:10,506 Bootstrap.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 15:13:10,506 Bootstrap.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 15:13:10,506 Bootstrap.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 15:13:10,506 Bootstrap.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 15:15:51,172 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 15:15:51,175 Bootstrap.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 15:15:51,176 Bootstrap.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 15:15:55,261 Bootstrap.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 15:15:55,269 Bootstrap.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 15:15:55,280 Bootstrap.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 15:15:55,280 Bootstrap.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 15:15:55,280 Bootstrap.run() - Request uri=/timeConsume.html
