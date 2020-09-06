@@ -1,8 +1,11 @@
 package com.alex.diytomcat.http;
 
 import cn.hutool.core.util.StrUtil;
+import com.alex.diytomcat.Bootstrap;
+import com.alex.diytomcat.catalina.Context;
 import com.alex.diytomcat.util.MiniBrowser;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.IOException;
@@ -17,6 +20,8 @@ import java.nio.charset.StandardCharsets;
 @Log4j2
 public class Request {
 
+    public static final String prefix = "/";
+
     @Getter
     private String requestString;
 
@@ -25,6 +30,10 @@ public class Request {
 
     private Socket socket;
 
+    @Getter
+    @Setter
+    private Context context;
+
     public Request(Socket socket) throws IOException {
         this.socket = socket;
         parseHttpRequest();
@@ -32,6 +41,24 @@ public class Request {
             return;
         }
         parseUri();
+        parseContext();
+        if(!prefix.equals(context.getPath()))
+            uri = StrUtil.removePrefix(uri, context.getPath());
+        log.info("Request -- {} with Context -- {}", this.uri, this.context);
+    }
+
+    private void parseContext() {
+        String path = StrUtil.subBetween(uri, prefix, prefix);
+        if (StrUtil.isEmpty(path)) {
+            path = prefix;
+        } else {
+            path = prefix + path;
+        }
+
+        context = Bootstrap.getContextMap().get(path);
+        if (null == context) {
+            context = Bootstrap.getContextMap().get(prefix);
+        }
     }
 
     private void parseHttpRequest() throws IOException {

@@ -14,8 +14,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class TestTomcat {
-    private static int port = 18080;
-    private static String ip = "127.0.0.1";
+    private static final int port = 18080;
+    private static final String ip = "127.0.0.1";
 
     @BeforeClass
     public static void beforeClass() {
@@ -61,6 +61,20 @@ public class TestTomcat {
         long duration = timeInterval.intervalMs();
 
         Assert.assertTrue(duration < 3000);
+    }
+
+    @Test
+    public void testNotRootHtml() {
+        String html = getContentString("/a/index.html");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat -- [a/index.html]"));
+    }
+
+    @Test
+    public void testConfHtml() {
+        String html = getContentString("/b/index.html");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat -- [b/index.html]"));
     }
 
     private String getContentString(String uri) {
