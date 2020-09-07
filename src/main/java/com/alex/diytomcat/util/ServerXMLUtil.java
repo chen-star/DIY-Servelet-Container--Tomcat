@@ -1,9 +1,8 @@
 package com.alex.diytomcat.util;
 
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.io.FileUtil;
-import com.alex.diytomcat.catalina.Context;
-import com.alex.diytomcat.catalina.Engine;
-import com.alex.diytomcat.catalina.Host;
+import com.alex.diytomcat.catalina.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -66,5 +65,19 @@ public class ServerXMLUtil {
         Document d = Jsoup.parse(xml);
         Element host = d.selectFirst("Service");
         return host.attr("name");
+    }
+
+    public static List<Connector> getConnectors(Service service) {
+        List<Connector> connectors = new ArrayList<>();
+        String xml = FileUtil.readUtf8String(Constants.serverXmlFile);
+        Document d = Jsoup.parse(xml);
+        Elements elements = d.select("Connector");
+        for (Element e : elements) {
+            int port = Convert.toInt(e.attr("port"));
+            Connector c = new Connector(service);
+            c.setPort(port);
+            connectors.add(c);
+        }
+        return connectors;
     }
 }

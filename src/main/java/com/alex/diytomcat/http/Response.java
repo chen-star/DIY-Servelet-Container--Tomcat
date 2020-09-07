@@ -21,6 +21,9 @@ public class Response {
     @Getter
     private PrintWriter writer;
 
+    @Setter
+    private byte[] body;
+
     @Getter
     @Setter
     private String contentType;
@@ -32,7 +35,12 @@ public class Response {
     }
 
     public byte[] getBody() throws UnsupportedEncodingException {
-        String content = stringWriter.toString();
-        return content.getBytes(StandardCharsets.UTF_8);
+        // text based
+        if (null == body) {
+            String content = stringWriter.toString();
+            return content.getBytes(StandardCharsets.UTF_8);
+        }
+        // byte stream
+        return body;
     }
 }

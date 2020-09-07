@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Server>
+    <Connector port="18080"/>
+    <Connector port="18081"/>
+    <Connector port="18082"/>
     <Service name="Catalina">
         <Engine defaultHost="localhost">
             <!-- virtual host: can imagine as a website -->

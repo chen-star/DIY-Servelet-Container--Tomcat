@@ -4,11 +4,13 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.http.HttpUtil;
 import com.alex.diytomcat.util.MiniBrowser;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -79,14 +81,14 @@ public class TestTomcat {
 
     @Test
     public void test404() {
-        String response  = getHeaderString("/not_exist.html");
+        String response = getHeaderString("/not_exist.html");
         System.out.println(response);
         Assert.assertTrue(response.contains("HTTP/1.1 404 Not Found"));
     }
 
     @Test
     public void test500() {
-        String response  = getHeaderString("/500.html");
+        String response = getHeaderString("/500.html");
         System.out.println(response);
         Assert.assertTrue(response.contains("HTTP/1.1 500 Internal Server Error"));
     }
@@ -100,13 +102,39 @@ public class TestTomcat {
 
     @Test
     public void testaTxt() {
-        String response  = getHeaderString("/a/a.txt");
+        String response = getHeaderString("/a/a.txt");
         System.out.println(response);
         Assert.assertTrue(response.contains("Content-Type: text/plain"));
     }
 
-    private String getHeaderString(String uri) {
+    @Test
+    public void testJpg() {
+        byte[] bytes = getContentBytes("/car.png");
+        int pngFileLength = 959;
+        Assert.assertEquals(pngFileLength, bytes.length);
+    }
+
+    @Test
+    public void testPDF() {
+        String uri = "/sample.pdf";
         String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        HttpUtil.download(url, baos, true);
+        int pdfFileLength = 3028;
+        Assert.assertEquals(pdfFileLength, baos.toByteArray().length);
+    }
+
+    private byte[] getContentBytes(String uri) {
+        return getContentBytes(uri, false);
+    }
+
+    private byte[] getContentBytes(String uri, boolean gzip) {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        return MiniBrowser.getContentBytes(url, false);
+    }
+
+    private String getHeaderString(String uri) {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String http = MiniBrowser.getHttpString(url);
         return http;
     }

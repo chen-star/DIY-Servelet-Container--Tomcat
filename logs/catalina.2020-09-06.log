@@ -558,3 +558,189 @@
 [[32mINFO [m] 2020-09-06 21:48:05,655 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
 [[32mINFO [m] 2020-09-06 21:48:05,655 Server.run() - Request uri=/a.txt
 [[32mINFO [m] 2020-09-06 21:48:05,702 Server.run() - MimeType=text/plain
+[[32mINFO [m] 2020-09-06 22:03:47,996 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 22:03:48,051 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-06 22:03:48,051 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/a is done in 1 ms
+[[32mINFO [m] 2020-09-06 22:03:48,051 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-06 22:03:48,051 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/ROOT is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:03:48,052 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-06 22:03:48,052 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/b is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 22:03:48,052 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 22:03:48,053 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 22:03:48,053 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 22:03:54,255 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,256 Server.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:03:54,319 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:54,323 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,324 Server.run() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-06 22:03:54,326 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,326 Server.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 22:03:54,327 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:54,334 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,334 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,334 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:03:54,335 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:03:54,335 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:54,335 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:54,334 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:54,336 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:03:54,336 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:55,338 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:03:55,339 Server.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:03:55,339 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:55,341 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
+[[32mINFO [m] 2020-09-06 22:03:55,341 Server.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:03:55,341 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:55,342 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:55,343 Server.run() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-06 22:03:55,343 Server.run() - this is a deliberate exception
+[[32mINFO [m] 2020-09-06 22:03:55,344 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:03:55,344 Server.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:03:55,356 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:03:55,358 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:03:55,358 Server.run() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-06 22:03:55,358 Server.run() - MimeType=text/plain
+[[32mINFO [m] 2020-09-06 22:03:55,359 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:55,359 Server.run() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-06 22:03:55,668 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-06 22:03:55,677 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:03:55,678 Server.run() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-06 22:03:55,678 Server.run() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-06 22:04:25,028 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:25,028 Server.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:04:25,037 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:25,040 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:25,040 Server.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 22:04:25,041 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:25,046 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:25,046 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:25,046 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:25,047 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:26,049 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:04:26,050 Server.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:04:26,050 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:26,051 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
+[[32mINFO [m] 2020-09-06 22:04:26,051 Server.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:04:26,051 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:26,052 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:26,052 Server.run() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-06 22:04:26,053 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:26,053 Server.run() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-06 22:04:26,053 Server.run() - this is a deliberate exception
+[[32mINFO [m] 2020-09-06 22:04:26,054 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:04:26,054 Server.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:04:26,063 Server.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:04:26,064 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:04:26,064 Server.run() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-06 22:04:26,064 Server.run() - MimeType=text/plain
+[[32mINFO [m] 2020-09-06 22:04:26,065 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:26,065 Server.run() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-06 22:04:26,378 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-06 22:04:26,387 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:26,387 Server.run() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-06 22:04:26,387 Server.run() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-06 22:04:38,914 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:38,915 Server.run() - Request uri=/car.png
+[[32mINFO [m] 2020-09-06 22:04:43,148 Request.<init>() - Request -- /car.jpg with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:43,148 Server.run() - Request uri=/car.jpg
+[[32mINFO [m] 2020-09-06 22:04:43,148 Server.run() - MimeType=image/jpeg
+[[32mINFO [m] 2020-09-06 22:04:59,540 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:04:59,540 Server.run() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-06 22:04:59,540 Server.run() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-06 22:19:14,089 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 22:19:14,144 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-06 22:19:14,144 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/a is done in 1 ms
+[[32mINFO [m] 2020-09-06 22:19:14,144 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-06 22:19:14,144 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/ROOT is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:19:14,145 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-06 22:19:14,145 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/b is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 22:19:14,152 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-06 22:19:14,153 Server.start() - Server starts up in 1 ms
+[[32mINFO [m] 2020-09-06 22:19:17,938 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:17,939 Connector.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:19:17,998 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:18,002 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:18,002 Connector.run() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-06 22:19:18,004 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:18,004 Connector.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 22:19:18,005 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:18,011 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:18,011 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:18,012 Connector.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:19:18,012 Connector.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:19:18,012 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:18,012 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:18,011 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:18,013 Connector.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 22:19:18,013 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:19,016 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:19:19,017 Connector.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:19:19,017 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:19,019 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
+[[32mINFO [m] 2020-09-06 22:19:19,019 Connector.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 22:19:19,019 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:19,020 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:19,021 Connector.run() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-06 22:19:19,021 Connector.run() - this is a deliberate exception
+[[32mINFO [m] 2020-09-06 22:19:19,022 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:19:19,022 Connector.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 22:19:19,034 Connector.run() - MimeType=text/html
+[[32mINFO [m] 2020-09-06 22:19:19,036 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 22:19:19,036 Connector.run() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-06 22:19:19,036 Connector.run() - MimeType=text/plain
+[[32mINFO [m] 2020-09-06 22:19:19,037 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:19,037 Connector.run() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-06 22:19:19,340 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-06 22:19:19,349 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 22:19:19,349 Connector.run() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-06 22:19:19,349 Connector.run() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-06 22:19:33,066 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 22:19:33,121 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-06 22:19:33,121 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/a is done in 1 ms
+[[32mINFO [m] 2020-09-06 22:19:33,121 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-06 22:19:33,122 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/ROOT is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:19:33,122 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-06 22:19:33,122 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/b is done in 0 ms
+[[32mINFO [m] 2020-09-06 22:19:33,129 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 22:19:33,129 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 22:19:33,129 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 22:19:33,129 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 22:19:33,130 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 22:19:33,130 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 22:19:33,130 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 22:19:33,130 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 22:19:33,130 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 22:19:33,130 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-06 22:19:33,130 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-06 22:19:33,130 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-06 22:19:33,130 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-06 22:19:33,130 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-06 22:19:33,131 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-06 22:19:33,131 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-06 22:19:33,131 Server.start() - Server starts up in 2 ms
