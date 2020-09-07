@@ -45,6 +45,9 @@ Client ------------>  Servlet Container-
 
 ~~~xml
 <Server>
+    <Connector port="18080"/>
+    <Connector port="18081"/>
+    <Connector port="18082"/>
     <Service name="Catalina">
         <Engine defaultHost="localhost">
             <Host name="localhost">
@@ -61,23 +64,34 @@ Client ------------>  Servlet Container-
 	- A Server element represents the entire Catalina servlet container.
 	- Therefore, it must be the single outermost element in the conf/server.xml
 	- A Server can have ***mulitple*** Service
+
+* **Connector**
+
+	- The HTTP Connector element represents a Connector component that supports the HTTP/1.1 protocol.
+	- A server can have ***multiple*** Connector
 	
 * **Service**
 	
-	- A Server can have ***1*** Service
+	- A Service element represents the combination of one or more Connector components that share a single Engine component for processing incoming requests. 
+	- A Server can have ***multiple*** Service
 	
 * **Engine**
 
+	- The Engine element represents the entire request processing machinery associated with a particular Catalina Service.
+	- It receives and processes all requests from one or more Connectors, and returns the completed response to the Connector for ultimate transmission back to the client.
+	- A Service can only have ***1*** Engine
 
 * **Host**
 
 	- The Host element represents a virtual host, which is an association of a network name for a server (such as "www.alex.com" with the particular server on which Catalina is running.
+	- An Engine can have ***multiple*** Host
 
 	
 * **Context**
 
 	- The Context element represents a web application, which is run within a particular virtual host. 
 	- Each web application is based on a Web Application Archive (WAR) file, or a corresponding directory containing the corresponding unpacked contents
+	- A Host can have ***multiple*** Context
 
 
 Service --> one Engine ---> many hosts --> many context
