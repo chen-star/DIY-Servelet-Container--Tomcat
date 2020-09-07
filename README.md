@@ -30,11 +30,11 @@ A ***Servelt*** is a class that handles requests, processes them and reply back 
 Servlets are under the control of another Java Application called a ***Servlet Container***. When an application running in a web server receives a request, the server hands the requst to the servlet container - which in turn passes it to the target Servlet. 
 
 ~~~
-                                         -----------> Servelt 1
-		  request                        |
-Client ------------>  Servlet Container-
+                                         	 -----------> Servelt 1
+	   request                               |
+Client ------------>  Servlet Container----------
 		                                 |
-										 -----------> Servlet 2
+					         -----------> Servlet 2
 
 ~~~
 
