@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Server>
-    <Engine defaultHost="localhost">
-        <!-- virtual host: can imagine as a website -->
-        <!-- eg. www.alex.com, www.bob.com -->
-        <Host name="localhost">
-            <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
-        </Host>
-    </Engine>
+    <Service name="Catalina">
+        <Engine defaultHost="localhost">
+            <!-- virtual host: can imagine as a website -->
+            <!-- eg. www.alex.com, www.bob.com -->
+            <Host name="localhost">
+                <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
+            </Host>
+        </Engine>
+    </Service>
 </Server>

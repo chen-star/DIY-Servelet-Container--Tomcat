@@ -1,6 +1,7 @@
 package com.alex.diytomcat.catalina;
 
 import com.alex.diytomcat.util.ServerXMLUtil;
+import lombok.Getter;
 
 import java.util.List;
 
@@ -14,7 +15,11 @@ public class Engine {
 
     private List<Host> hosts;
 
-    public Engine() {
+    @Getter
+    private Service service;
+
+    public Engine(Service service) {
+        this.service = service;
         this.defaultHost = ServerXMLUtil.getEngineDefaultHost();
         this.hosts = ServerXMLUtil.getHosts(this);
         checkDefault();

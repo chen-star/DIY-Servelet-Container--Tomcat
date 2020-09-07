@@ -37,3 +37,47 @@ Client ------------>  Servlet Container-
 										 -----------> Servlet 2
 
 ~~~
+
+
+## Tomcat Components
+
+**server.xml structure**
+
+~~~xml
+<Server>
+    <Service name="Catalina">
+        <Engine defaultHost="localhost">
+            <Host name="localhost">
+                <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
+            </Host>
+        </Engine>
+    </Service>
+</Server>
+
+~~~
+
+* **Server**
+	
+	- A Server element represents the entire Catalina servlet container.
+	- Therefore, it must be the single outermost element in the conf/server.xml
+	- A Server can have ***mulitple*** Service
+	
+* **Service**
+	
+	- A Server can have ***1*** Service
+	
+* **Engine**
+
+
+* **Host**
+
+	- The Host element represents a virtual host, which is an association of a network name for a server (such as "www.alex.com" with the particular server on which Catalina is running.
+
+	
+* **Context**
+
+	- The Context element represents a web application, which is run within a particular virtual host. 
+	- Each web application is based on a Web Application Archive (WAR) file, or a corresponding directory containing the corresponding unpacked contents
+
+
+Service --> one Engine ---> many hosts --> many context

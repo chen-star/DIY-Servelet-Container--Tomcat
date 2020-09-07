@@ -208,3 +208,63 @@
 [[32mINFO [m] 2020-09-06 17:59:25,062 Bootstrap.run() - Request uri=/index.html
 [[32mINFO [m] 2020-09-06 17:59:25,063 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
 [[32mINFO [m] 2020-09-06 17:59:25,063 Bootstrap.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 18:23:35,336 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 18:23:35,340 Bootstrap.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 18:23:35,340 Bootstrap.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 18:23:35,340 Bootstrap.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 18:23:35,341 Bootstrap.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 18:23:35,390 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-06 18:23:35,390 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/a is done in 1 ms
+[[32mINFO [m] 2020-09-06 18:23:35,390 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-06 18:23:35,390 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/ROOT is done in 0 ms
+[[32mINFO [m] 2020-09-06 18:23:35,391 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-06 18:23:35,391 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/b is done in 0 ms
+[[32mINFO [m] 2020-09-06 18:23:39,364 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:23:39,365 Bootstrap.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 18:23:39,369 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:23:39,370 Bootstrap.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 18:23:39,376 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:23:39,376 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:23:39,375 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:23:39,376 Bootstrap.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:23:39,376 Bootstrap.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:23:39,376 Bootstrap.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:23:40,379 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 18:23:40,379 Bootstrap.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 18:23:40,380 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
+[[32mINFO [m] 2020-09-06 18:23:40,381 Bootstrap.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 18:31:07,061 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-06 18:31:07,116 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-06 18:31:07,117 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/a is done in 2 ms
+[[32mINFO [m] 2020-09-06 18:31:07,117 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-06 18:31:07,117 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/webapps/ROOT is done in 0 ms
+[[32mINFO [m] 2020-09-06 18:31:07,118 Context.<init>() - Deploying web app directory: /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-06 18:31:07,118 Context.<init>() - Deployment of web app directory /Users/alexchen/programs/diytomcat/b is done in 0 ms
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-06 18:31:07,118 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-06 18:31:07,119 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-06 18:31:07,119 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-06 18:31:15,012 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:31:15,013 Server.run() - Request uri=/
+[[32mINFO [m] 2020-09-06 18:31:15,018 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:31:15,019 Server.run() - Request uri=/a.html
+[[32mINFO [m] 2020-09-06 18:31:15,026 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:31:15,026 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:31:15,026 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT)
+[[32mINFO [m] 2020-09-06 18:31:15,027 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:31:15,027 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:31:15,027 Server.run() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-06 18:31:16,035 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a)
+[[32mINFO [m] 2020-09-06 18:31:16,035 Server.run() - Request uri=/index.html
+[[32mINFO [m] 2020-09-06 18:31:16,036 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b)
+[[32mINFO [m] 2020-09-06 18:31:16,037 Server.run() - Request uri=/index.html
