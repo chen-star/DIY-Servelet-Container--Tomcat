@@ -9,6 +9,7 @@ import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
 import com.alex.diytomcat.util.Constants;
 import com.alex.diytomcat.util.ThreadPoolUtil;
+import com.alex.diytomcat.util.WebXmlUtil;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.File;
@@ -74,6 +75,9 @@ public class Server {
                                 throw new Exception("this is a deliberate exception");
                             }
 
+                            if ("/".equals(uri))
+                                uri = WebXmlUtil.getWelcomeFile(request.getContext());
+
                             if (uri.equals("/")) {
                                 String html = "Hello From Alex's DIY Tomcat";
                                 response.getWriter().println(html);
@@ -81,9 +85,14 @@ public class Server {
                                 String fileName = StrUtil.removePrefix(uri, "/");
                                 File file = FileUtil.file(context.getDocBase(), fileName);
                                 if (file.exists()) {
+                                    String extension = FileUtil.extName(file);
+                                    String mimeType = WebXmlUtil.getMimeType(extension);
+                                    log.info("MimeType={}", mimeType);
+                                    response.setContentType(mimeType);
                                     String fileContent = FileUtil.readUtf8String(file);
                                     response.getWriter().println(fileContent);
 
+                                    // for multi tasks demo purpose
                                     if (fileName.equals("timeConsume.html")) {
                                         ThreadUtil.sleep(1000);
                                     }

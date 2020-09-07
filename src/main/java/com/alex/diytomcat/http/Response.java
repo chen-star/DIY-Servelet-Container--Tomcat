@@ -1,6 +1,7 @@
 package com.alex.diytomcat.http;
 
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
 import java.io.PrintWriter;
@@ -21,6 +22,7 @@ public class Response {
     private PrintWriter writer;
 
     @Getter
+    @Setter
     private String contentType;
 
     public Response() {

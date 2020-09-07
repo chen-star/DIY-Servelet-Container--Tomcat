@@ -20,6 +20,8 @@ public class Constants {
 
     public static final File serverXmlFile = new File(confFolder, "server.xml");
 
+    public static final File webXmlFile = new File(confFolder, "web.xml");
+
 
     // ---------- Headers & Bodies ----------
 

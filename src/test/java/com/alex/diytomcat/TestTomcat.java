@@ -91,6 +91,20 @@ public class TestTomcat {
         Assert.assertTrue(response.contains("HTTP/1.1 500 Internal Server Error"));
     }
 
+    @Test
+    public void testNotDefaultWelcomeHtml() {
+        String html = getContentString("/a");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat -- [a/index.html]"));
+    }
+
+    @Test
+    public void testaTxt() {
+        String response  = getHeaderString("/a/a.txt");
+        System.out.println(response);
+        Assert.assertTrue(response.contains("Content-Type: text/plain"));
+    }
+
     private String getHeaderString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
         String http = MiniBrowser.getHttpString(url);

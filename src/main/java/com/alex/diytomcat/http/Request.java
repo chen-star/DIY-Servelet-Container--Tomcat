@@ -46,12 +46,20 @@ public class Request {
         }
         parseUri();
         parseContext();
-        if(!prefix.equals(context.getPath()))
+        if(!prefix.equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
+            if (StrUtil.isEmpty(uri)) {
+                uri = prefix;
+            }
+        }
         log.info("Request -- {} with Context -- {}", this.uri, this.context);
     }
 
     private void parseContext() {
+        context = service.getEngine().getDefaultHost().getContext(uri);
+        if (null != context) {
+            return;
+        }
         String path = StrUtil.subBetween(uri, prefix, prefix);
         if (StrUtil.isEmpty(path)) {
             path = prefix;
