@@ -28,6 +28,9 @@ public class Request extends BaseRequest {
     @Getter
     private String uri;
 
+    @Getter
+    private String method;
+
     private Socket socket;
 
     @Getter
@@ -46,6 +49,8 @@ public class Request extends BaseRequest {
         }
         parseUri();
         parseContext();
+        parseMethod();
+
         if(!prefix.equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
             if (StrUtil.isEmpty(uri)) {
@@ -53,6 +58,10 @@ public class Request extends BaseRequest {
             }
         }
         log.info("Request -- {} with Context -- {}", this.uri, this.context);
+    }
+
+    private void parseMethod() {
+        method = StrUtil.subBefore(requestString, " ", false);
     }
 
     private void parseContext() {

@@ -1,0 +1,294 @@
+[[32mINFO [m] 2020-09-07 01:21:49,505 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-07 01:21:49,561 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee
+[[32mINFO [m] 2020-09-07 01:21:49,563 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 3 ms
+[[32mINFO [m] 2020-09-07 01:21:49,563 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-07 01:21:49,563 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:21:49,564 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-07 01:21:49,564 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:21:49,565 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-07 01:21:49,565 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:21:49,571 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 01:21:49,572 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 01:21:49,572 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 01:21:49,572 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 01:21:49,573 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 01:21:49,573 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-07 01:21:49,573 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 01:21:49,573 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 01:21:49,573 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 01:21:49,573 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 01:21:58,826 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:58,827 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:21:58,883 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:58,887 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:58,887 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 01:21:58,887 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:58,895 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:58,895 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:58,895 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:58,895 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:59,900 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,901 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:21:59,901 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:59,903 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,903 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:21:59,903 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:59,904 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,904 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 01:21:59,905 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,905 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 01:21:59,905 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 01:21:59,906 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,906 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:21:59,917 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:21:59,918 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,918 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 01:21:59,918 HttpProcessor.execute() - MimeType=text/plain
+[[32mINFO [m] 2020-09-07 01:21:59,919 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:21:59,919 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 01:22:00,231 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 01:22:00,239 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:22:00,240 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 01:22:00,240 HttpProcessor.execute() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-07 01:22:00,244 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 01:22:00,244 HttpProcessor.execute() - Request uri=/hello
+[[1;31mERROR[m] 2020-09-07 01:22:00,249 HttpProcessor.execute() - No such method: [service]
+[[32mINFO [m] 2020-09-07 01:23:03,071 Bootstrap.main() - Tomcat starts up
+[[32mINFO [m] 2020-09-07 01:23:03,128 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee
+[[32mINFO [m] 2020-09-07 01:23:03,129 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 2 ms
+[[32mINFO [m] 2020-09-07 01:23:03,130 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a
+[[32mINFO [m] 2020-09-07 01:23:03,130 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:23:03,130 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT
+[[32mINFO [m] 2020-09-07 01:23:03,130 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:23:03,131 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b
+[[32mINFO [m] 2020-09-07 01:23:03,131 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 01:23:03,139 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 01:23:03,139 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 01:23:03,139 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 01:23:03,140 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 01:23:03,140 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-07 01:23:03,140 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 01:23:03,140 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 01:23:03,140 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 01:23:03,140 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 01:23:05,573 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,573 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 01:23:05,579 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,579 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 01:23:05,579 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 01:23:05,581 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,581 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:23:05,631 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:05,632 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,633 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 01:23:05,633 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:05,639 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,639 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,639 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:05,639 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:23:05,639 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:23:05,639 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:23:05,640 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:05,640 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:05,641 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:06,647 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,647 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:23:06,647 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:06,648 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,648 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:23:06,649 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:06,649 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,650 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:23:06,659 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:23:06,660 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,660 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 01:23:06,661 HttpProcessor.execute() - MimeType=text/plain
+[[32mINFO [m] 2020-09-07 01:23:06,662 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,662 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 01:23:06,962 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 01:23:06,970 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:06,971 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 01:23:06,971 HttpProcessor.execute() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-07 01:23:06,975 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 01:23:06,975 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 01:23:06,980 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 01:23:20,349 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:23:20,349 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:23:20,358 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:26:51,397 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,397 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:26:51,406 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:26:51,427 Request.<init>() - Request -- /vendor/bootstrap/css/bootstrap.min.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,427 HttpProcessor.execute() - Request uri=/vendor/bootstrap/css/bootstrap.min.css
+[[32mINFO [m] 2020-09-07 01:26:51,427 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,427 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:26:51,433 Request.<init>() - Request -- /vendor/jquery/jquery.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,434 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,434 HttpProcessor.execute() - Request uri=/vendor/jquery/jquery.min.js
+[[32mINFO [m] 2020-09-07 01:26:51,434 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,434 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:26:51,434 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:26:51,434 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:26:51,434 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:27:35,496 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,496 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:27:35,505 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:27:35,528 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,528 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:27:35,545 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,545 Request.<init>() - Request -- /vendor/jquery/jquery.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,545 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,545 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,545 HttpProcessor.execute() - Request uri=/vendor/jquery/jquery.min.js
+[[32mINFO [m] 2020-09-07 01:27:35,545 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:27:35,545 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:27:35,545 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:27:35,621 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,621 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:27:35,624 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,624 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:27:35,626 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:27:35,626 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:28:54,735 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,736 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:28:54,745 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:28:54,767 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,768 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:28:54,768 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:28:54,781 Request.<init>() - Request -- /vendor/jquery/jquery.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,782 HttpProcessor.execute() - Request uri=/vendor/jquery/jquery.min.js
+[[32mINFO [m] 2020-09-07 01:28:54,782 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,782 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:28:54,782 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,783 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:28:54,783 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,783 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:28:54,850 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,850 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:28:54,853 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,853 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:28:54,855 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:28:54,855 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:30:44,584 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,584 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:30:44,592 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:30:44,616 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,616 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:30:44,617 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:30:44,634 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,634 Request.<init>() - Request -- /vendor/jquery/jquery.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,635 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:30:44,635 HttpProcessor.execute() - Request uri=/vendor/jquery/jquery.min.js
+[[32mINFO [m] 2020-09-07 01:30:44,635 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,635 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,635 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:30:44,635 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:30:44,701 Request.<init>() - Request -- /vendor/bootstrap/js/bootstrap.bundle.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,701 HttpProcessor.execute() - Request uri=/vendor/bootstrap/js/bootstrap.bundle.min.js
+[[32mINFO [m] 2020-09-07 01:30:44,703 Request.<init>() - Request -- /vendor/jquery-easing/jquery.easing.min.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,703 HttpProcessor.execute() - Request uri=/vendor/jquery-easing/jquery.easing.min.js
+[[32mINFO [m] 2020-09-07 01:30:44,707 Request.<init>() - Request -- /js/scrolling-nav.js with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:30:44,707 HttpProcessor.execute() - Request uri=/js/scrolling-nav.js
+[[32mINFO [m] 2020-09-07 01:33:05,783 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:33:05,783 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:33:05,792 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:33:05,821 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:33:05,822 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:33:05,822 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:35:32,954 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:35:32,954 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:35:32,963 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:35:32,985 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:35:32,985 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:35:32,986 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:35:57,411 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:35:57,411 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:35:57,419 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:35:57,441 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:35:57,441 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:35:57,441 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:36:22,346 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:36:22,347 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:36:22,359 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:36:22,390 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:36:22,390 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:36:22,390 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:36:54,654 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:36:54,655 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:36:54,663 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:36:54,685 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:36:54,685 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:36:54,685 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:37:18,361 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:37:18,361 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:37:18,367 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:37:18,405 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:37:18,405 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:37:18,405 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:37:48,653 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:37:48,653 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:37:48,660 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:37:48,690 Request.<init>() - Request -- /css/scrolling-nav.css with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:37:48,691 HttpProcessor.execute() - Request uri=/css/scrolling-nav.css
+[[32mINFO [m] 2020-09-07 01:37:48,691 HttpProcessor.execute() - MimeType=text/css
+[[32mINFO [m] 2020-09-07 01:38:03,435 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:03,435 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:38:03,441 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:03,442 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:03,443 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 01:38:03,443 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:03,450 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:03,450 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:03,450 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:03,450 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:04,455 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,455 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:38:04,456 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:04,456 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,457 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 01:38:04,457 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:04,458 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,458 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 01:38:04,459 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,459 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 01:38:04,459 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 01:38:04,460 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,460 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 01:38:04,468 HttpProcessor.execute() - MimeType=text/html
+[[32mINFO [m] 2020-09-07 01:38:04,469 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,469 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 01:38:04,469 HttpProcessor.execute() - MimeType=text/plain
+[[32mINFO [m] 2020-09-07 01:38:04,470 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,470 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 01:38:04,780 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 01:38:04,789 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 01:38:04,789 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 01:38:04,789 HttpProcessor.execute() - MimeType=application/pdf
+[[32mINFO [m] 2020-09-07 01:38:04,793 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 01:38:04,793 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 01:38:04,793 HelloServlet.doGet() - HelloServlet--doGet
