@@ -77,6 +77,26 @@ public class TestTomcat {
         Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat -- [b/index.html]"));
     }
 
+    @Test
+    public void test404() {
+        String response  = getHeaderString("/not_exist.html");
+        System.out.println(response);
+        Assert.assertTrue(response.contains("HTTP/1.1 404 Not Found"));
+    }
+
+    @Test
+    public void test500() {
+        String response  = getHeaderString("/500.html");
+        System.out.println(response);
+        Assert.assertTrue(response.contains("HTTP/1.1 500 Internal Server Error"));
+    }
+
+    private String getHeaderString(String uri) {
+        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        String http = MiniBrowser.getHttpString(url);
+        return http;
+    }
+
     private String getContentString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         String content = MiniBrowser.getContentString(url);

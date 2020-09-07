@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
@@ -31,7 +32,7 @@ public class Server {
 
     private static final int PORT = 18080;
 
-    public Server(){
+    public Server() {
         this.service = new Service(this);
     }
 
@@ -58,6 +59,7 @@ public class Server {
                             System.out.println("Request is \r\n" + request.getRequestString());
                             Context context = request.getContext();
 
+
                             // wrap Response entity
                             Response response = new Response();
 
@@ -67,12 +69,17 @@ public class Server {
                             }
                             log.info("Request uri={}", uri);
 
+                            // for 500 demo purpose
+                            if ("/500.html".equals(uri)) {
+                                throw new Exception("this is a deliberate exception");
+                            }
+
                             if (uri.equals("/")) {
                                 String html = "Hello From Alex's DIY Tomcat";
                                 response.getWriter().println(html);
                             } else {
                                 String fileName = StrUtil.removePrefix(uri, "/");
-                                File file = FileUtil.file(context.getDocBase(),fileName);
+                                File file = FileUtil.file(context.getDocBase(), fileName);
                                 if (file.exists()) {
                                     String fileContent = FileUtil.readUtf8String(file);
                                     response.getWriter().println(fileContent);
@@ -82,14 +89,24 @@ public class Server {
                                     }
 
                                 } else {
-                                    response.getWriter().println("404 File Not Found");
+                                    handle404(s, uri);
+                                    return;
                                 }
                             }
 
 
                             handle200(s, response);
-                        } catch (IOException e) {
+                        } catch (Exception e) {
                             log.error(e.getMessage());
+                            handle500(s, e);
+                        } finally {
+                            try {
+                                if (!s.isClosed()) {
+                                    s.close();
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 };
@@ -117,7 +134,46 @@ public class Server {
 
         OutputStream os = s.getOutputStream();
         os.write(responseBytes);
-        s.close();
+    }
+
+    private static void handle404(Socket s, String uri) throws IOException {
+        OutputStream os = s.getOutputStream();
+        String responseText = StrUtil.format(Constants.textFormat_404, uri, uri);
+        responseText = Constants.response_header_404 + responseText;
+        byte[] responseByte = responseText.getBytes(StandardCharsets.UTF_8);
+        os.write(responseByte);
+    }
+
+    private static void handle500(Socket s, Exception e) {
+        OutputStream os = null;
+        try {
+            os = s.getOutputStream();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+        StackTraceElement[] stackTraceElement = e.getStackTrace();
+        StringBuffer sb = new StringBuffer();
+        sb.append(e.toString());
+        sb.append("\r\n");
+        for (StackTraceElement element : stackTraceElement) {
+            sb.append("\t");
+            sb.append(element.toString());
+            sb.append("\r\n");
+        }
+
+        String msg = e.getMessage();
+        if (!StrUtil.isEmpty(msg) && msg.length() > 30) {
+            msg = msg.substring(0, 29);
+        }
+
+        String text = StrUtil.format(Constants.textFormat_500, msg, e.toString(), sb.toString());
+        text = Constants.response_header_500 + text;
+        byte[] responseByte = text.getBytes(StandardCharsets.UTF_8);
+        try {
+            os.write(responseByte);
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
     }
 
     private static void logJVM() {
