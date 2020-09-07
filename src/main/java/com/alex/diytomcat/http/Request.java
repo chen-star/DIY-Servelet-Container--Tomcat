@@ -18,7 +18,7 @@ import java.nio.charset.StandardCharsets;
  * @created : 9/5/20, Saturday
  **/
 @Log4j2
-public class Request {
+public class Request extends BaseRequest {
 
     public static final String prefix = "/";
 

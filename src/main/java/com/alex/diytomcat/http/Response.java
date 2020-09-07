@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
  * @created : 9/5/20, Saturday
  **/
 @Log4j2
-public class Response {
+public class Response extends BaseResponse{
 
     private StringWriter stringWriter;
 
@@ -43,4 +43,5 @@ public class Response {
         // byte stream
         return body;
     }
+
 }

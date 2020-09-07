@@ -3,6 +3,7 @@ package com.alex.diytomcat.catalina;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
+import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
@@ -33,36 +34,43 @@ public class HttpProcessor {
             }
             log.info("Request uri={}", uri);
 
+            String servletClassName = context.getServletClassName(uri);
+
             // for 500 demo purpose
             if ("/500.html".equals(uri)) {
                 throw new Exception("this is a deliberate exception");
             }
 
-            if ("/".equals(uri))
-                uri = WebXmlUtil.getWelcomeFile(request.getContext());
-
-            if (uri.equals("/")) {
-                String html = "Hello From Alex's DIY Tomcat";
-                response.getWriter().println(html);
+            if (null != servletClassName) {
+                Object servletObject = ReflectUtil.newInstance(servletClassName);
+                ReflectUtil.invoke(servletObject, "doGet", request, response);
             } else {
-                String fileName = StrUtil.removePrefix(uri, "/");
-                File file = FileUtil.file(context.getDocBase(), fileName);
-                if (file.exists()) {
-                    String extension = FileUtil.extName(file);
-                    String mimeType = WebXmlUtil.getMimeType(extension);
-                    log.info("MimeType={}", mimeType);
-                    response.setContentType(mimeType);
-                    byte[] body = FileUtil.readBytes(file);
-                    response.setBody(body);
+                if ("/".equals(uri))
+                    uri = WebXmlUtil.getWelcomeFile(request.getContext());
 
-                    // for multi tasks demo purpose
-                    if (fileName.equals("timeConsume.html")) {
-                        ThreadUtil.sleep(1000);
-                    }
-
+                if (uri.equals("/")) {
+                    String html = "Hello From Alex's DIY Tomcat";
+                    response.getWriter().println(html);
                 } else {
-                    handle404(s, uri);
-                    return;
+                    String fileName = StrUtil.removePrefix(uri, "/");
+                    File file = FileUtil.file(context.getDocBase(), fileName);
+                    if (file.exists()) {
+                        String extension = FileUtil.extName(file);
+                        String mimeType = WebXmlUtil.getMimeType(extension);
+                        log.info("MimeType={}", mimeType);
+                        response.setContentType(mimeType);
+                        byte[] body = FileUtil.readBytes(file);
+                        response.setBody(body);
+
+                        // for multi tasks demo purpose
+                        if (fileName.equals("timeConsume.html")) {
+                            ThreadUtil.sleep(1000);
+                        }
+
+                    } else {
+                        handle404(s, uri);
+                        return;
+                    }
                 }
             }
 

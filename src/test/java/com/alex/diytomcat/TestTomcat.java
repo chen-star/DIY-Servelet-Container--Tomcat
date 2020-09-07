@@ -117,11 +117,18 @@ public class TestTomcat {
     @Test
     public void testPDF() {
         String uri = "/sample.pdf";
-        String url = StrUtil.format("http://{}:{}{}", ip,port,uri);
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         HttpUtil.download(url, baos, true);
         int pdfFileLength = 3028;
         Assert.assertEquals(pdfFileLength, baos.toByteArray().length);
+    }
+
+    @Test
+    public void testHelloServlet() {
+        String html = getContentString("/j2ee/hello");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello Alex's Tomcat from HelloServlet"));
     }
 
     private byte[] getContentBytes(String uri) {
