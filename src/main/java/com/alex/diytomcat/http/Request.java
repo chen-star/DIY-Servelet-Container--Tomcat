@@ -1,8 +1,8 @@
 package com.alex.diytomcat.http;
 
 import cn.hutool.core.util.StrUtil;
-import com.alex.diytomcat.Bootstrap;
 import com.alex.diytomcat.catalina.Context;
+import com.alex.diytomcat.catalina.Engine;
 import com.alex.diytomcat.util.MiniBrowser;
 import lombok.Getter;
 import lombok.Setter;
@@ -31,11 +31,15 @@ public class Request {
     private Socket socket;
 
     @Getter
+    private Engine engine;
+
+    @Getter
     @Setter
     private Context context;
 
-    public Request(Socket socket) throws IOException {
+    public Request(Socket socket, Engine engine) throws IOException {
         this.socket = socket;
+        this.engine = engine;
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString)) {
             return;
@@ -55,9 +59,9 @@ public class Request {
             path = prefix + path;
         }
 
-        context = Bootstrap.getContextMap().get(path);
+        context = engine.getDefaultHost().getContext(path);
         if (null == context) {
-            context = Bootstrap.getContextMap().get(prefix);
+            context = engine.getDefaultHost().getContext(prefix);
         }
     }
 

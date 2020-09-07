@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Server>
-    <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b" />
+    <Engine defaultHost="localhost">
+        <!-- virtual host: can imagine as a website -->
+        <!-- eg. www.alex.com, www.bob.com -->
+        <Host name="localhost">
+            <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
+        </Host>
+    </Engine>
 </Server>

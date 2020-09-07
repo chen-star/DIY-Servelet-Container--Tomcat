@@ -22,6 +22,7 @@
 
 Simply put, Apache Tomcat is a web server and ***servlet container*** that is used to deploy and serve Java web applications.
 
+
 #### Then What is Servlet & Web Container
 
 A ***Servelt*** is a class that handles requests, processes them and reply back with a response. 
