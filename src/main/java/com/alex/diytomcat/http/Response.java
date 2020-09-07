@@ -28,6 +28,10 @@ public class Response extends BaseResponse{
     @Setter
     private String contentType;
 
+    @Getter
+    @Setter
+    private int status;
+
     public Response() {
         this.stringWriter = new StringWriter();
         this.writer = new PrintWriter(stringWriter);

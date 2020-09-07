@@ -4,6 +4,7 @@ import cn.hutool.core.util.ReflectUtil;
 import com.alex.diytomcat.catalina.Context;
 import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
+import com.alex.diytomcat.util.Constants;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
@@ -12,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * Handle Requests goto servlets
+ *
  * @author : alexchen
  * @created : 9/7/20, Monday
  **/
@@ -36,5 +39,7 @@ public class InvokerServlet extends HttpServlet {
 
         Object servletObject = ReflectUtil.newInstance(servletClassName);
         ReflectUtil.invoke(servletObject, "service", request, response);
+
+        response.setStatus(Constants.CODE_200);
     }
 }

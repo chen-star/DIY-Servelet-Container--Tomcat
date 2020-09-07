@@ -63,4 +63,11 @@ public class Constants {
             + "<u>The server encountered an internal error that prevented it from fulfilling this request.</u></p>"
             + "<p>Stacktrace:</p>" + "<pre>{}</pre>" + "<HR size='1' noshade='noshade'><h3>DiyTocmat 1.0.1</h3>"
             + "</body></html>";
+
+    // ------------ Http Code ------------
+
+    public static final int CODE_200 = 200;
+    public static final int CODE_302 = 302;
+    public static final int CODE_404 = 404;
+    public static final int CODE_500 = 500;
 }

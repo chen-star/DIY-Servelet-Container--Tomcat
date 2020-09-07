@@ -60,7 +60,7 @@ public class Context {
 
     private void deploy() {
         TimeInterval timeInterval = DateUtil.timer();
-        log.info("Deploying web application directory {}", this.docBase);
+        log.info("Deploying web application directory {} for the path {}", this.docBase, this.path);
         init();
         log.info("Deployment of web application directory {} finished in {} ms", this.getDocBase(), timeInterval.intervalMs());
     }
