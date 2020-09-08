@@ -6,6 +6,7 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alex.diytomcat.classloader.WebappClassLoader;
 import com.alex.diytomcat.exception.WebConfigDuplicationException;
+import com.alex.diytomcat.http.ApplicationContext;
 import com.alex.diytomcat.util.ContextXMLUtil;
 import com.alex.diytomcat.watcher.ContextFileChangeWatcher;
 import lombok.Getter;
@@ -17,6 +18,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import javax.servlet.ServletContext;
 import java.io.File;
 import java.util.*;
 
@@ -53,6 +55,9 @@ public class Context {
     @Setter
     private ContextFileChangeWatcher contextFileChangeWatcher;
 
+    @Getter
+    private ServletContext servletContext;
+
     private Map<String, String> url_servletClassName;
     private Map<String, String> url_servletName;
     private Map<String, String> servletName_className;
@@ -71,6 +76,7 @@ public class Context {
         this.webappClassLoader = new WebappClassLoader(docBase, commonClassLoader);
         this.host = host;
         this.reloadable = reloadable;
+        this.servletContext = new ApplicationContext(this);
 
         deploy();
     }

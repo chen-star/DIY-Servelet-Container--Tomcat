@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
+import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
@@ -102,5 +103,15 @@ public class Request extends BaseRequest {
 
         temp = StrUtil.subBefore(temp, '?', false);
         uri = temp;
+    }
+
+    @Override
+    public ServletContext getServletContext() {
+        return context.getServletContext();
+    }
+
+    @Override
+    public String getRealPath(String path) {
+        return getServletContext().getRealPath(path);
     }
 }
