@@ -230,6 +230,13 @@ public class TestTomcat {
         Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat"));
     }
 
+    @Test
+    public void testJsp() {
+        String html = getContentString("/javaweb/");
+        System.out.println(html);
+        Assert.assertEquals(html, "hello jsp@javaweb");
+    }
+
     private byte[] getContentBytes(String uri) {
         return getContentBytes(uri, false);
     }

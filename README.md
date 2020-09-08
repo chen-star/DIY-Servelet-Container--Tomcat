@@ -52,6 +52,10 @@ Simply put, Auto Reload feature in Tomcat is to ask Tomcat monitor classes direc
 
 ---
 
+#### JSP Processing
+
+**Jsp => .java => .class**
+
 
 ## Tomcat Components
 

@@ -7,6 +7,7 @@ import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
 import com.alex.diytomcat.servlet.DefaultServlet;
 import com.alex.diytomcat.servlet.InvokerServlet;
+import com.alex.diytomcat.servlet.JspServlet;
 import com.alex.diytomcat.util.Constants;
 import com.alex.diytomcat.util.SessionManager;
 import lombok.extern.log4j.Log4j2;
@@ -40,6 +41,8 @@ public class HttpProcessor {
 
             if (null != servletClassName) {
                 InvokerServlet.getInstance().service(request, response);
+            } else if (uri.endsWith(".jsp")) {
+                JspServlet.getInstance().service(request, response);
             } else {
                 DefaultServlet.getInstance().service(request, response);
             }

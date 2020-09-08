@@ -24,6 +24,8 @@ public class Constants {
 
     public static final File contextXmlFile = new File(confFolder, "context.xml");
 
+    public static final String workFolder = SystemUtil.get("user.dir") + File.separator + "work";
+
 
     // ---------- Headers & Bodies ----------
 

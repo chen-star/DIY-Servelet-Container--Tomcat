@@ -270,7 +270,6 @@ public class BaseServletContext implements ServletContext {
 
     }
 
-    @Override
     public String getVirtualServerName() {
         return null;
     }
