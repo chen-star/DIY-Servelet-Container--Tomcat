@@ -69,16 +69,25 @@ public class ServerXMLUtil {
     }
 
     public static List<Connector> getConnectors(Service service) {
-        List<Connector> connectors = new ArrayList<>();
+        List<Connector> result = new ArrayList<>();
         String xml = FileUtil.readUtf8String(Constants.serverXmlFile);
         Document d = Jsoup.parse(xml);
-        Elements elements = d.select("Connector");
-        for (Element e : elements) {
+        Elements es = d.select("Connector");
+        for (Element e : es) {
             int port = Convert.toInt(e.attr("port"));
+            String compression = e.attr("compression");
+            int compressionMinSize = Convert.toInt(e.attr("compressionMinSize"), 0);
+            String noCompressionUserAgents = e.attr("noCompressionUserAgents");
+            String compressableMimeType = e.attr("compressableMimeType");
             Connector c = new Connector(service);
             c.setPort(port);
-            connectors.add(c);
+            c.setCompression(compression);
+            c.setCompressableMimeType(compressableMimeType);
+            c.setNoCompressionUserAgents(noCompressionUserAgents);
+            c.setCompressableMimeType(compressableMimeType);
+            c.setCompressionMinSize(compressionMinSize);
+            result.add(c);
         }
-        return connectors;
+        return result;
     }
 }

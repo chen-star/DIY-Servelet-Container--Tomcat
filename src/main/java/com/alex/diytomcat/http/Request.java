@@ -5,6 +5,7 @@ import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
+import com.alex.diytomcat.catalina.Connector;
 import com.alex.diytomcat.catalina.Context;
 import com.alex.diytomcat.catalina.Service;
 import com.alex.diytomcat.util.MiniBrowser;
@@ -44,7 +45,7 @@ public class Request extends BaseRequest {
     private Socket socket;
 
     @Getter
-    private Service service;
+    private Connector connector;
 
     @Getter
     @Setter
@@ -65,9 +66,9 @@ public class Request extends BaseRequest {
     @Setter
     private HttpSession session;
 
-    public Request(Socket socket, Service service) throws IOException {
+    public Request(Socket socket, Connector connector) throws IOException {
         this.socket = socket;
-        this.service = service;
+        this.connector = connector;
         this.parameterMap = new HashMap<>();
         this.headerMap = new HashMap<>();
         parseHttpRequest();
@@ -173,6 +174,7 @@ public class Request extends BaseRequest {
     }
 
     private void parseContext() {
+        Service service = connector.getService();
         context = service.getEngine().getDefaultHost().getContext(uri);
         if (null != context) {
             return;

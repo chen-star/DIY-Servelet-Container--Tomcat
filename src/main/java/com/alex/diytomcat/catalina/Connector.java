@@ -22,7 +22,24 @@ public class Connector implements Runnable {
     @Setter
     int port;
 
+    @Getter
     private Service service;
+
+    @Getter
+    @Setter
+    private String compression;
+
+    @Getter
+    @Setter
+    private int compressionMinSize;
+
+    @Getter
+    @Setter
+    private String noCompressionUserAgents;
+
+    @Getter
+    @Setter
+    private String compressableMimeType;
 
     public Connector(Service service) {
         this.service = service;
@@ -39,7 +56,7 @@ public class Connector implements Runnable {
                     @Override
                     public void run() {
                         try {
-                            Request request = new Request(s, service);
+                            Request request = new Request(s, Connector.this);
                             Response response = new Response();
                             HttpProcessor processor = new HttpProcessor();
                             processor.execute(s, request, response);

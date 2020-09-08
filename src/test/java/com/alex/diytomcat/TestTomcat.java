@@ -5,6 +5,7 @@ import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.IoUtil;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.hutool.core.util.ZipUtil;
 import cn.hutool.http.HttpUtil;
 import com.alex.diytomcat.util.MiniBrowser;
 import org.junit.Assert;
@@ -220,13 +221,22 @@ public class TestTomcat {
         Assert.assertTrue(html.contains("Alex(session)"));
     }
 
+    @Test
+    public void testGzip() {
+        byte[] gzipContent = getContentBytes("/", true);
+        byte[] unGzipContent = ZipUtil.unGzip(gzipContent);
+        String html = new String(unGzipContent);
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello From Alex's DIY Tomcat"));
+    }
+
     private byte[] getContentBytes(String uri) {
         return getContentBytes(uri, false);
     }
 
     private byte[] getContentBytes(String uri, boolean gzip) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
-        return MiniBrowser.getContentBytes(url, false);
+        return MiniBrowser.getContentBytes(url, gzip);
     }
 
     private String getHeaderString(String uri) {

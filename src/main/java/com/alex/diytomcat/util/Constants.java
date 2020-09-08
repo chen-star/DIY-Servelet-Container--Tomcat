@@ -30,6 +30,12 @@ public class Constants {
     public final static String response_header_200 = "HTTP/1.1 200 OK\r\n" +
             "Content-Type: {}\r\n\r\n";
 
+
+    public static final String response_header_200_gzip =
+            "HTTP/1.1 200 OK\r\nContent-Type: {}{}\r\n" +
+                    "Content-Encoding:gzip" +
+                    "\r\n\r\n";
+
     public static final String response_header_202 =
             "HTTP/1.1 200 OK\r\n" +
                     "Content-Type: {}{}" +
