@@ -30,6 +30,11 @@ public class Constants {
     public final static String response_header_200 = "HTTP/1.1 200 OK\r\n" +
             "Content-Type: {}\r\n\r\n";
 
+    public static final String response_header_202 =
+            "HTTP/1.1 200 OK\r\n" +
+                    "Content-Type: {}{}" +
+                    "\r\n\r\n";
+
     public static final String response_header_404 = "HTTP/1.1 404 Not Found\r\n" +
             "Content-Type: text/html\r\n\r\n";
 

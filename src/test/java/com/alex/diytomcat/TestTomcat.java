@@ -17,6 +17,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+import static com.alex.diytomcat.util.MiniBrowser.getHttpString;
+
 public class TestTomcat {
     private static final int port = 18080;
     private static final String ip = "127.0.0.1";
@@ -168,6 +170,22 @@ public class TestTomcat {
         Assert.assertEquals(html, "post name:Alex Chen");
     }
 
+    @Test
+    public void testHeader() {
+        String html = getContentString("/javaweb/header");
+        System.out.println(html);
+        Assert.assertEquals(html, "Alex browser Agent");
+    }
+
+    @Test
+    public void testSetCookie() {
+        String uri = "/javaweb/setCookie";
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        String html = getHttpString(url);
+        System.out.println(html);
+        Assert.assertTrue(html.contains("set cookie successfully! name:Alex(cookie)"));
+    }
+
     private byte[] getContentBytes(String uri) {
         return getContentBytes(uri, false);
     }
@@ -179,7 +197,7 @@ public class TestTomcat {
 
     private String getHeaderString(String uri) {
         String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
-        String http = MiniBrowser.getHttpString(url);
+        String http = getHttpString(url);
         return http;
     }
 

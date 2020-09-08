@@ -69,6 +69,8 @@ public class HttpProcessor {
 
         String contentType = response.getContentType();
         String headerText = Constants.response_header_200;
+        String cookiesHeader = response.getCookiesHeader();
+        headerText = StrUtil.format(headerText, contentType, cookiesHeader);
         headerText = StrUtil.format(headerText, contentType);
 
         byte[] header = headerText.getBytes();
