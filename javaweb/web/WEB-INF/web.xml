@@ -3,6 +3,16 @@
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.alex.javaweb.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>author</param-name>
+            <param-value>Alex Chen</param-value>
+        </init-param>
+        <init-param>
+            <param-name>site</param-name>
+            <param-value>https://coolestalextech.com/</param-value>
+        </init-param>
+        <!-- start up along with context init -->
+        <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>

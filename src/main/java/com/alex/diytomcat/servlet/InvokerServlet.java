@@ -41,10 +41,10 @@ public class InvokerServlet extends HttpServlet {
             Class servletClass = context.getWebappClassLoader().loadClass(servletClassName);
             System.out.println("ServletClass: " + servletClass);
             System.out.println("ServletClass' classLoader" + servletClass.getClassLoader());
-            Object servletObject = ReflectUtil.newInstance(servletClass);
+            Object servletObject = context.getServlet(servletClass);
             ReflectUtil.invoke(servletObject, "service", request, response);
             response.setStatus(Constants.CODE_200);
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
