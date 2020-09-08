@@ -49,4 +49,34 @@
         <url-pattern>/setCookie</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <servlet-class>com.alex.javaweb.GetCookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookieServlet</servlet-name>
+        <url-pattern>/getCookie</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>SetSessionServlet</servlet-name>
+        <servlet-class>com.alex.javaweb.SetSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetSessionServlet</servlet-name>
+        <url-pattern>/setSession</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <servlet-class>com.alex.javaweb.GetSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSessionServlet</servlet-name>
+        <url-pattern>/getSession</url-pattern>
+    </servlet-mapping>
+
 </web-app>

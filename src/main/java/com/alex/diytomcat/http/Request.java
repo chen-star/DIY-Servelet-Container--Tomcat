@@ -13,6 +13,8 @@ import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
 import javax.servlet.ServletContext;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
@@ -56,6 +58,13 @@ public class Request extends BaseRequest {
     @Getter
     private Map<String, String> headerMap;
 
+    @Getter
+    private Cookie[] cookies;
+
+    @Getter
+    @Setter
+    private HttpSession session;
+
     public Request(Socket socket, Service service) throws IOException {
         this.socket = socket;
         this.service = service;
@@ -70,6 +79,7 @@ public class Request extends BaseRequest {
         parseMethod();
         parseParameters();
         parseHeaders();
+        parseCookies();
 
         if (!prefix.equals(context.getPath())) {
             uri = StrUtil.removePrefix(uri, context.getPath());
@@ -78,6 +88,17 @@ public class Request extends BaseRequest {
             }
         }
         log.info("Request -- {} with Context -- {}", this.uri, this.context);
+    }
+
+    public String getJSessionIdFromCookie() {
+        if (null == cookies)
+            return null;
+        for (Cookie cookie : cookies) {
+            if ("JSESSIONID".equals(cookie.getName())) {
+                return cookie.getValue();
+            }
+        }
+        return null;
     }
 
     public String getHeader(String name) {
@@ -107,6 +128,24 @@ public class Request extends BaseRequest {
 
     public String[] getParameterValues(String name) {
         return parameterMap.get(name);
+    }
+
+    private void parseCookies() {
+        List<Cookie> cookieList = new ArrayList<>();
+        String cookies = headerMap.get("cookie");
+        if (null != cookies) {
+            String[] pairs = StrUtil.split(cookies, ";");
+            for (String pair : pairs) {
+                if (StrUtil.isBlank(pair))
+                    continue;
+                String[] segs = StrUtil.split(pair, "=");
+                String name = segs[0].trim();
+                String value = segs[1].trim();
+                Cookie cookie = new Cookie(name, value);
+                cookieList.add(cookie);
+            }
+        }
+        this.cookies = ArrayUtil.toArray(cookieList, Cookie.class);
     }
 
     public void parseHeaders() {

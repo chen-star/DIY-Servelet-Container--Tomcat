@@ -7,8 +7,10 @@ import com.alex.diytomcat.http.Response;
 import com.alex.diytomcat.servlet.DefaultServlet;
 import com.alex.diytomcat.servlet.InvokerServlet;
 import com.alex.diytomcat.util.Constants;
+import com.alex.diytomcat.util.SessionManager;
 import lombok.extern.log4j.Log4j2;
 
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -30,6 +32,8 @@ public class HttpProcessor {
                 return;
             }
             log.info("Request uri={}", uri);
+
+            prepareSession(request, response);
 
             String servletClassName = context.getServletClassName(uri);
 
@@ -63,6 +67,12 @@ public class HttpProcessor {
         }
 
 
+    }
+
+    public void prepareSession(Request request, Response response) {
+        String jsessionid = request.getJSessionIdFromCookie();
+        HttpSession session = SessionManager.getSession(jsessionid, request, response);
+        request.setSession(session);
     }
 
     private static void handle200(Socket s, Response response) throws IOException {
