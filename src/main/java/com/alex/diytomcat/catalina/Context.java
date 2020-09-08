@@ -4,8 +4,10 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
+import com.alex.diytomcat.classloader.WebappClassLoader;
 import com.alex.diytomcat.exception.WebConfigDuplicationException;
 import com.alex.diytomcat.util.ContextXMLUtil;
+import com.alex.diytomcat.watcher.ContextFileChangeWatcher;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -36,12 +38,27 @@ public class Context {
 
     private File contextWebXmlFile;
 
+    @Getter
+    private WebappClassLoader webappClassLoader;
+
+    @Getter
+    @Setter
+    private Host host;
+
+    @Getter
+    @Setter
+    private boolean reloadable;
+
+    @Getter
+    @Setter
+    private ContextFileChangeWatcher contextFileChangeWatcher;
+
     private Map<String, String> url_servletClassName;
     private Map<String, String> url_servletName;
     private Map<String, String> servletName_className;
     private Map<String, String> className_servletName;
 
-    public Context(String path, String docBase) {
+    public Context(String path, String docBase, Host host, boolean reloadable) {
         TimeInterval timeInterval = DateUtil.timer();
         this.path = path;
         this.docBase = docBase;
@@ -50,6 +67,10 @@ public class Context {
         this.url_servletName = new HashMap<>();
         this.servletName_className = new HashMap<>();
         this.className_servletName = new HashMap<>();
+        ClassLoader commonClassLoader = Thread.currentThread().getContextClassLoader();
+        this.webappClassLoader = new WebappClassLoader(docBase, commonClassLoader);
+        this.host = host;
+        this.reloadable = reloadable;
 
         deploy();
     }
@@ -62,7 +83,20 @@ public class Context {
         TimeInterval timeInterval = DateUtil.timer();
         log.info("Deploying web application directory {} for the path {}", this.docBase, this.path);
         init();
+        if (reloadable) {
+            contextFileChangeWatcher = new ContextFileChangeWatcher(this);
+            contextFileChangeWatcher.start();
+        }
         log.info("Deployment of web application directory {} finished in {} ms", this.getDocBase(), timeInterval.intervalMs());
+    }
+
+    public void reload() {
+        host.reload(this);
+    }
+
+    public void stop() {
+        webappClassLoader.stop();
+        contextFileChangeWatcher.stop();
     }
 
     private void init() {

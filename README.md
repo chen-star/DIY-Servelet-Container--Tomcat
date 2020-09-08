@@ -40,6 +40,18 @@ Client ------------>  Servlet Container-
 
 ---
 
+## Features
+
+#### Auto Reload 
+
+Simply put, Auto Reload feature in Tomcat is to ask Tomcat monitor classes directory. If any changes being made, automatically reload the context to reflect the change.
+
+**Diagram**
+
+![](src/main/resources/img/reload.png)
+
+---
+
 
 ## Tomcat Components
 
@@ -107,3 +119,20 @@ Client ------------>  Servlet Container-
 	- DefaultServlet: handle static resources
 	- JspServlet: handle JSP resources
 
+---
+
+## ClassLoader
+
+* **What is ClassLoader**
+
+	- Load Java class into JVM in runtime
+	- .class file ==>  Class Object
+
+![](src/main/resources/img/jvmclassloader.jpg)
+
+
+* **Parents Delegation Model**
+
+	- Class loaders follow the delegation model where on request to find a class or resource, a ClassLoader instance will delegate the search of the class or resource to the parent class loader.
+
+	- Eg. Let's say we have a request to load an application class into the JVM. The app class loader first delegates the loading of that class to its parent extension class loader which in turn delegates it to the bootstrap class loader. Only if the bootstrap and then the extension class loader is unsuccessful in loading the class, the app class loader tries to load the class itself.

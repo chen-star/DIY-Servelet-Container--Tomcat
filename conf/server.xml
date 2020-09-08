@@ -9,6 +9,7 @@
             <!-- eg. www.alex.com, www.bob.com -->
             <Host name="localhost">
                 <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
+                <Context path="/javaweb" docBase="/Users/alexchen/programs/diytomcat/javaweb/web" reloadable = "true"/>
             </Host>
         </Engine>
     </Service>

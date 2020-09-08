@@ -406,3 +406,513 @@
 [[32mINFO [m] 2020-09-07 13:04:52,550 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
 [[32mINFO [m] 2020-09-07 13:04:52,550 HttpProcessor.execute() - Request uri=/hello
 [[32mINFO [m] 2020-09-07 13:04:52,553 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 14:14:05,016 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 14:14:05,020 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 7 ms
+[[32mINFO [m] 2020-09-07 14:14:05,021 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 14:14:05,021 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:05,021 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 14:14:05,021 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:05,022 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 14:14:05,022 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:05,029 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 14:14:05,029 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 14:14:05,030 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 14:14:05,030 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 14:14:05,030 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 14:14:05,030 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 14:14:05,030 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:05,031 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 14:14:05,031 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 14:14:05,031 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 14:14:05,031 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 14:14:13,906 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 14:14:13,911 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 8 ms
+[[32mINFO [m] 2020-09-07 14:14:13,912 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 14:14:13,912 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 1 ms
+[[32mINFO [m] 2020-09-07 14:14:13,912 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 14:14:13,913 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:13,913 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 14:14:13,914 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 14:14:13,920 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 14:14:13,921 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 14:14:13,921 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 14:14:13,921 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 14:14:13,922 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 14:14:13,922 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-07 14:14:13,922 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 14:14:13,922 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 14:14:13,922 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 14:14:13,922 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 14:14:15,458 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:15,458 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 14:14:15,514 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:15,515 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 14:14:15,521 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:15,521 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:15,521 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:15,521 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 14:14:15,521 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 14:14:15,521 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 14:14:16,524 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,524 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 14:14:16,525 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,526 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 14:14:16,527 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,527 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 14:14:16,529 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,529 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 14:14:16,529 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 14:14:16,530 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,530 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 14:14:16,541 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,541 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 14:14:16,542 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,542 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 14:14:16,841 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 14:14:16,849 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 14:14:16,850 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 14:14:16,853 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 14:14:16,854 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 14:14:16,857 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:10:47,319 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:10:47,324 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 7 ms
+[[32mINFO [m] 2020-09-07 16:10:47,325 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:10:47,325 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:10:47,326 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:10:47,326 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:10:47,326 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:10:47,327 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:10:47,327 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:10:47,328 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:10:47,335 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:10:47,335 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:10:47,335 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:10:47,335 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:10:47,335 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:10:47,336 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:10:47,336 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:10:47,336 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:10:47,336 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:10:47,336 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:10:47,336 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:10:47,336 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:10:47,336 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 16:10:47,336 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:10:47,336 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:10:47,337 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:10:47,337 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 16:10:54,192 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,192 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:10:54,200 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,200 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:10:54,250 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,250 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:10:54,257 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,257 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,257 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:10:54,257 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:54,257 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:10:54,258 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:10:55,265 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,266 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:10:55,268 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@676ea92e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,268 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:10:55,269 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,270 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:10:55,270 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:10:55,271 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,271 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:10:55,282 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,282 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:10:55,283 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,283 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:10:55,584 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:10:55,593 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@ff92de9, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:10:55,593 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:10:55,597 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@65984af3, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:10:55,598 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:10:55,601 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:10:55,601 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:15:13,238 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:15:13,242 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 8 ms
+[[32mINFO [m] 2020-09-07 16:15:13,243 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:15:13,243 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:15:13,243 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:15:13,243 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:15:13,244 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:15:13,244 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:15:13,246 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:15:13,248 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 2 ms
+[[32mINFO [m] 2020-09-07 16:15:13,255 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:15:13,255 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:15:13,255 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:15:13,255 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:15:13,256 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:15:13,256 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:15:13,256 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:15:13,256 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:15:13,256 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:15:13,256 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:15:13,256 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:15:13,256 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:15:13,256 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 16:15:13,256 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:15:13,257 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:15:13,257 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:15:13,257 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 16:15:23,462 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:23,463 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:15:23,516 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:23,516 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:15:23,523 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:23,523 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:23,523 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:23,523 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:15:23,523 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:15:23,523 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:15:24,531 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,531 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:15:24,533 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@72abd812, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,533 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:15:24,535 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,536 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:15:24,537 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,537 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:15:24,537 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:15:24,538 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,538 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:15:24,548 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,549 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:15:24,550 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,550 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:15:24,851 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:15:24,859 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:15:24,859 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:15:24,863 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@4e8cfc3f, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:15:24,863 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:15:24,866 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:15:24,867 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:18:18,352 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,352 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:18:18,354 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,354 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:18:18,354 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:18:18,355 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,355 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:18:18,366 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,366 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:18:18,372 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,372 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,372 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:18,372 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:18:18,372 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:18:18,372 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:18:19,375 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,375 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:18:19,376 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@72abd812, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,377 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:18:19,378 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,378 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:18:19,388 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,388 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:18:19,389 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,389 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:18:19,701 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:18:19,710 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:18:19,710 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:18:19,714 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@4e8cfc3f, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:18:19,714 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:18:19,714 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:18:19,714 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:18:19,715 Request.<init>() - Request -- /hello with Context -- Context(path=/javaweb, docBase=/Users/alexchen/programs/diytomcat/javaweb/web, contextWebXmlFile=/Users/alexchen/programs/diytomcat/javaweb/web/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@65984af3, url_servletClassName={/hello=com.alex.javaweb.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.javaweb.HelloServlet}, className_servletName={com.alex.javaweb.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:18:19,715 HttpProcessor.execute() - Request uri=/hello
+[[1;31mERROR[m] 2020-09-07 16:18:19,717 HttpProcessor.execute() - Instance class [com.alex.javaweb.HelloServlet] error!
+[[32mINFO [m] 2020-09-07 16:20:56,803 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:20:56,808 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 8 ms
+[[32mINFO [m] 2020-09-07 16:20:56,809 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:20:56,809 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:20:56,809 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:20:56,810 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:20:56,810 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:20:56,811 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:20:56,813 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:20:56,814 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:20:56,821 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:20:56,821 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-07 16:20:56,822 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:20:56,822 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 16:24:21,993 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:24:21,997 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 7 ms
+[[32mINFO [m] 2020-09-07 16:24:21,998 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:24:21,998 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:24:21,998 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:24:21,998 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:24:21,999 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:24:21,999 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:24:22,001 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:24:22,003 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 2 ms
+[[32mINFO [m] 2020-09-07 16:24:22,010 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:24:22,010 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:24:22,010 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:24:22,010 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:24:22,010 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:24:22,011 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:24:22,011 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:24:22,011 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:24:22,011 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:24:22,011 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:24:22,011 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:24:22,011 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:24:22,011 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 16:24:22,011 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:24:22,011 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:24:22,012 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:24:22,012 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 16:24:29,112 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:29,112 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:24:29,165 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:29,165 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:24:29,172 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:29,172 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:29,172 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:29,172 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:24:29,172 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:24:29,172 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:24:30,176 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,176 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:24:30,178 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@72abd812, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,179 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:24:30,180 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,180 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:24:30,181 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,181 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:24:30,181 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:24:30,182 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,182 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:24:30,193 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,193 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:24:30,194 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,194 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:24:30,499 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:24:30,507 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@776d156e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:24:30,508 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:24:30,512 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@4e8cfc3f, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:24:30,512 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:24:30,515 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:24:30,516 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:24:30,516 Request.<init>() - Request -- /hello with Context -- Context(path=/javaweb, docBase=/Users/alexchen/programs/diytomcat/javaweb/web, contextWebXmlFile=/Users/alexchen/programs/diytomcat/javaweb/web/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6c939dc1, url_servletClassName={/hello=com.alex.javaweb.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.javaweb.HelloServlet}, className_servletName={com.alex.javaweb.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:24:30,517 HttpProcessor.execute() - Request uri=/hello
+[[1;31mERROR[m] 2020-09-07 16:24:30,521 HttpProcessor.execute() - Instance class [com.alex.javaweb.HelloServlet] error!
+[[32mINFO [m] 2020-09-07 16:26:28,185 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:26:28,190 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 7 ms
+[[32mINFO [m] 2020-09-07 16:26:28,191 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:26:28,191 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:26:28,191 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:26:28,192 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:26:28,192 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:26:28,193 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:26:28,195 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:26:28,196 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:26:28,203 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:26:28,204 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:26:28,204 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:26:28,204 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:26:28,205 Server.start() - Server starts up in 3 ms
+[[32mINFO [m] 2020-09-07 16:26:33,729 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,730 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:26:33,736 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,736 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:26:33,785 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,786 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:26:33,793 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,793 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,793 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:33,793 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:26:33,793 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:26:33,793 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:26:34,797 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6aaf4d54, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,797 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:26:34,799 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@107500c1, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,800 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:26:34,801 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,801 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:26:34,801 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:26:34,802 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6aaf4d54, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,802 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:26:34,813 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6aaf4d54, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,813 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:26:34,814 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:34,814 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:26:35,118 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:26:35,126 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@2c206a16, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:26:35,127 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:26:35,130 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7e94aebb, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:26:35,131 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:26:35,134 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:26:35,134 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:26:35,135 Request.<init>() - Request -- /hello with Context -- Context(path=/javaweb, docBase=/Users/alexchen/programs/diytomcat/javaweb/web, contextWebXmlFile=/Users/alexchen/programs/diytomcat/javaweb/web/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6b91ce1d, url_servletClassName={/hello=com.alex.javaweb.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.javaweb.HelloServlet}, className_servletName={com.alex.javaweb.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:26:35,135 HttpProcessor.execute() - Request uri=/hello
+[[1;31mERROR[m] 2020-09-07 16:26:35,140 HttpProcessor.execute() - Instance class [com.alex.javaweb.HelloServlet] error!
+[[32mINFO [m] 2020-09-07 16:32:35,761 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 16:32:35,766 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 8 ms
+[[32mINFO [m] 2020-09-07 16:32:35,766 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 16:32:35,766 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:32:35,767 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 16:32:35,767 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 16:32:35,767 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 16:32:35,768 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:32:35,769 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 16:32:35,770 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 16:32:35,778 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 16:32:35,778 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Service.init() - Initialization processed in 1 ms
+[[32mINFO [m] 2020-09-07 16:32:35,779 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 16:32:35,779 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 16:32:38,585 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,586 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 16:32:38,592 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,592 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:32:38,641 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,641 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 16:32:38,647 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,648 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,648 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:38,648 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:32:38,648 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:32:38,648 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 16:32:39,655 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,656 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:32:39,658 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@676ea92e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,658 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 16:32:39,659 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,659 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 16:32:39,659 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 16:32:39,661 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,661 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 16:32:39,671 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f9c51af, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,672 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 16:32:39,672 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,673 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 16:32:39,971 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 16:32:39,980 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@3f00b99e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 16:32:39,980 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 16:32:39,984 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@65984af3, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:32:39,984 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 16:32:39,987 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 16:32:39,988 Request.<init>() - Request -- /hello with Context -- Context(path=/javaweb, docBase=/Users/alexchen/programs/diytomcat/javaweb/web, contextWebXmlFile=/Users/alexchen/programs/diytomcat/javaweb/web/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7102b482, url_servletClassName={/hello=com.alex.javaweb.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.javaweb.HelloServlet}, className_servletName={com.alex.javaweb.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 16:32:39,988 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 18:44:51,407 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee for the path /j2ee
+[[32mINFO [m] 2020-09-07 18:44:51,415 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/j2ee finished in 9 ms
+[[32mINFO [m] 2020-09-07 18:44:51,416 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/a for the path /a
+[[32mINFO [m] 2020-09-07 18:44:51,416 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/a finished in 1 ms
+[[32mINFO [m] 2020-09-07 18:44:51,416 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT for the path /
+[[32mINFO [m] 2020-09-07 18:44:51,416 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/webapps/ROOT finished in 0 ms
+[[32mINFO [m] 2020-09-07 18:44:51,423 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/b for the path /b
+[[32mINFO [m] 2020-09-07 18:44:51,423 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/b finished in 0 ms
+[[32mINFO [m] 2020-09-07 18:44:51,424 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 18:44:51,425 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 18:44:51,427 Server.logJVM() - Server version:		Alex's Tomcat - v1.0.0
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - Server built:		2020-09-04 10:20:22
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - Server number:		1.0.1
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - OS Name	:		Mac OS X
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - OS Version:		10.15.6
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - Architecture:		x86_64
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - Java Home:		/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - JVM Version:		1.8.0_265-b01
+[[32mINFO [m] 2020-09-07 18:44:51,428 Server.logJVM() - JVM Vendor:		Oracle Corporation
+[[32mINFO [m] 2020-09-07 18:44:51,428 Connector.init() - Initializing ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 18:44:51,428 Connector.init() - Initializing ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 18:44:51,428 Connector.init() - Initializing ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 18:44:51,428 Service.init() - Initialization processed in 0 ms
+[[32mINFO [m] 2020-09-07 18:44:51,429 Connector.start() - Starting ProtocolHandler [http-bio-18080]
+[[32mINFO [m] 2020-09-07 18:44:51,429 Connector.start() - Starting ProtocolHandler [http-bio-18081]
+[[32mINFO [m] 2020-09-07 18:44:51,429 Connector.start() - Starting ProtocolHandler [http-bio-18082]
+[[32mINFO [m] 2020-09-07 18:44:51,429 Server.start() - Server starts up in 2 ms
+[[32mINFO [m] 2020-09-07 18:44:55,220 Request.<init>() - Request -- /not_exist.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,221 HttpProcessor.execute() - Request uri=/not_exist.html
+[[32mINFO [m] 2020-09-07 18:44:55,226 Request.<init>() - Request -- / with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,227 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 18:44:55,276 Request.<init>() - Request -- /a.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,277 HttpProcessor.execute() - Request uri=/a.html
+[[32mINFO [m] 2020-09-07 18:44:55,285 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,285 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,285 Request.<init>() - Request -- /timeConsume.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:55,285 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 18:44:55,285 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 18:44:55,285 HttpProcessor.execute() - Request uri=/timeConsume.html
+[[32mINFO [m] 2020-09-07 18:44:56,289 Request.<init>() - Request -- /index.html with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7ccedbd7, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@72092a3e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,290 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 18:44:56,291 Request.<init>() - Request -- /index.html with Context -- Context(path=/b, docBase=/Users/alexchen/programs/diytomcat/b, contextWebXmlFile=/Users/alexchen/programs/diytomcat/b/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7bdfb2e8, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=false, contextFileChangeWatcher=null, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,291 HttpProcessor.execute() - Request uri=/index.html
+[[32mINFO [m] 2020-09-07 18:44:56,292 Request.<init>() - Request -- /500.html with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,292 HttpProcessor.execute() - Request uri=/500.html
+[[1;31mERROR[m] 2020-09-07 18:44:56,292 HttpProcessor.execute() - this is a deliberate exception
+[[32mINFO [m] 2020-09-07 18:44:56,293 Request.<init>() - Request -- / with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7ccedbd7, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@72092a3e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,293 HttpProcessor.execute() - Request uri=/
+[[32mINFO [m] 2020-09-07 18:44:56,304 Request.<init>() - Request -- /a.txt with Context -- Context(path=/a, docBase=/Users/alexchen/programs/diytomcat/webapps/a, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/a/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@7ccedbd7, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@72092a3e, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,304 HttpProcessor.execute() - Request uri=/a.txt
+[[32mINFO [m] 2020-09-07 18:44:56,305 Request.<init>() - Request -- /car.png with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,306 HttpProcessor.execute() - Request uri=/car.png
+[[36mDEBUG[m] 2020-09-07 18:44:56,612 LogFactory.create() - Use [Slf4j] Logger As Default.
+[[32mINFO [m] 2020-09-07 18:44:56,622 Request.<init>() - Request -- /sample.pdf with Context -- Context(path=/, docBase=/Users/alexchen/programs/diytomcat/webapps/ROOT, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/ROOT/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@35e692c0, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@3f1ef9b0, url_servletClassName={}, url_servletName={}, servletName_className={}, className_servletName={})
+[[32mINFO [m] 2020-09-07 18:44:56,622 HttpProcessor.execute() - Request uri=/sample.pdf
+[[32mINFO [m] 2020-09-07 18:44:56,626 Request.<init>() - Request -- /hello with Context -- Context(path=/j2ee, docBase=/Users/alexchen/programs/diytomcat/webapps/j2ee, contextWebXmlFile=/Users/alexchen/programs/diytomcat/webapps/j2ee/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@6b9b34f5, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@655cc7f6, url_servletClassName={/hello=com.alex.diytomcat.webappservlet.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.diytomcat.webappservlet.HelloServlet}, className_servletName={com.alex.diytomcat.webappservlet.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 18:44:56,626 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 18:44:56,629 HelloServlet.doGet() - HelloServlet--doGet
+[[32mINFO [m] 2020-09-07 18:44:56,630 Request.<init>() - Request -- /hello with Context -- Context(path=/javaweb, docBase=/Users/alexchen/programs/diytomcat/javaweb/web, contextWebXmlFile=/Users/alexchen/programs/diytomcat/javaweb/web/WEB-INF/web.xml, webappClassLoader=com.alex.diytomcat.classloader.WebappClassLoader@f2079cd, host=com.alex.diytomcat.catalina.Host@3b216a0c, reloadable=true, contextFileChangeWatcher=com.alex.diytomcat.watcher.ContextFileChangeWatcher@1e78659, url_servletClassName={/hello=com.alex.javaweb.HelloServlet}, url_servletName={/hello=HelloServlet}, servletName_className={HelloServlet=com.alex.javaweb.HelloServlet}, className_servletName={com.alex.javaweb.HelloServlet=HelloServlet})
+[[32mINFO [m] 2020-09-07 18:44:56,630 HttpProcessor.execute() - Request uri=/hello
+[[32mINFO [m] 2020-09-07 18:45:41,425 ContextFileChangeWatcher.dealWith() - com.alex.diytomcat.watcher.ContextFileChangeWatcher@1e78659 Change detected HelloServlet.class 
+[[32mINFO [m] 2020-09-07 18:45:41,425 Host.reload() - Reloading Context with name [/javaweb] has started
+[[32mINFO [m] 2020-09-07 18:45:41,427 Context.deploy() - Deploying web application directory /Users/alexchen/programs/diytomcat/javaweb/web for the path /javaweb
+[[32mINFO [m] 2020-09-07 18:45:41,428 Context.deploy() - Deployment of web application directory /Users/alexchen/programs/diytomcat/javaweb/web finished in 1 ms
+[[32mINFO [m] 2020-09-07 18:45:41,428 Host.reload() - Reloading Context with name [/javaweb] has completed

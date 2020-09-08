@@ -17,7 +17,7 @@ import java.util.List;
  **/
 public class ServerXMLUtil {
 
-    public static List<Context> getContexts() {
+    public static List<Context> getContexts(Host host) {
         List<Context> contexts = new ArrayList<>();
         String xml = FileUtil.readUtf8String(Constants.serverXmlFile);
         Document d = Jsoup.parse(xml);
@@ -26,7 +26,8 @@ public class ServerXMLUtil {
         for (Element element : elements) {
             String path = element.attr("path");
             String docBase = element.attr("docBase");
-            Context context = new Context(path, docBase);
+            boolean reloadable = Convert.toBool(element.attr("reloadable"), true);
+            Context context = new Context(path, docBase, host, reloadable);
             contexts.add(context);
         }
 

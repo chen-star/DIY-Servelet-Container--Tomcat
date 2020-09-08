@@ -131,6 +131,13 @@ public class TestTomcat {
         Assert.assertTrue(html.contains("Hello Alex's Tomcat from HelloServlet"));
     }
 
+    @Test
+    public void testJavaWebHello() {
+        String html = getContentString("/javaweb/hello");
+        System.out.println(html);
+        Assert.assertTrue(html.contains("Hello DIY Tomcat from HelloServlet@javaweb"));
+    }
+
     private byte[] getContentBytes(String uri) {
         return getContentBytes(uri, false);
     }

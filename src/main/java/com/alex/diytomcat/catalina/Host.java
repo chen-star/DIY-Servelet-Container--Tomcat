@@ -4,6 +4,7 @@ import com.alex.diytomcat.util.Constants;
 import com.alex.diytomcat.util.ServerXMLUtil;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.util.HashMap;
@@ -16,6 +17,7 @@ import java.util.Map;
  * @author : alexchen
  * @created : 9/6/20, Sunday
  **/
+@Slf4j
 public class Host {
 
     @Getter
@@ -48,7 +50,7 @@ public class Host {
     }
 
     private void scanContextsInServerXML() {
-        List<Context> contexts = ServerXMLUtil.getContexts();
+        List<Context> contexts = ServerXMLUtil.getContexts(this);
         for (Context context : contexts) {
             contextMap.put(context.getPath(), context);
         }
@@ -73,7 +75,24 @@ public class Host {
         }
 
         String docBase = folder.getAbsolutePath();
-        Context context = new Context(path, docBase);
+        Context context = new Context(path, docBase, this, true);
         contextMap.put(context.getPath(), context);
+    }
+
+    public void reload(Context context) {
+        log.info("Reloading Context with name [{}] has started", context.getPath());
+        String path = context.getPath();
+        String docBase = context.getDocBase();
+        boolean reloadable = context.isReloadable();
+
+        // stop
+        context.stop();
+        // remove
+        contextMap.remove(path);
+        // new context
+        Context newContext = new Context(path, docBase, this, reloadable);
+        // put into map
+        contextMap.put(newContext.getPath(), newContext);
+        log.info("Reloading Context with name [{}] has completed", context.getPath());
     }
 }

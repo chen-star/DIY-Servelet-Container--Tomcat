@@ -12,8 +12,11 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response){
         try {
+            Class clazz= Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println(clazz);
+            System.out.println(clazz.getClassLoader());
             response.getWriter().println("Hello DIY Tomcat from HelloServlet@javaweb");
-        } catch (IOException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
