@@ -11,6 +11,8 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -143,6 +145,27 @@ public class TestTomcat {
         String html1 = getContentString("/javaweb/hello");
         String html2 = getContentString("/javaweb/hello");
         Assert.assertEquals(html1, html2);
+    }
+
+    @Test
+    public void testGetParam() {
+        String uri = "/javaweb/param";
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        Map<String, Object> params = new HashMap<>();
+        params.put("name", "Alex Chen");
+        String html = MiniBrowser.getContentString(url, params, true);
+        System.out.println(html);
+        Assert.assertEquals(html, "get name:Alex Chen");
+    }
+
+    @Test
+    public void testPostParam() {
+        String uri = "/javaweb/param";
+        String url = StrUtil.format("http://{}:{}{}", ip, port, uri);
+        Map<String, Object> params = new HashMap<>();
+        params.put("name", "Alex Chen");
+        String html = MiniBrowser.getContentString(url, params, false);
+        Assert.assertEquals(html, "post name:Alex Chen");
     }
 
     private byte[] getContentBytes(String uri) {
