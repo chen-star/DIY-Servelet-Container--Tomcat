@@ -43,7 +43,11 @@ public class InvokerServlet extends HttpServlet {
             System.out.println("ServletClass' classLoader" + servletClass.getClassLoader());
             Object servletObject = context.getServlet(servletClass);
             ReflectUtil.invoke(servletObject, "service", request, response);
-            response.setStatus(Constants.CODE_200);
+            if (null != response.getRedirectPath()) {
+                response.setStatus(Constants.CODE_302);
+            } else {
+                response.setStatus(Constants.CODE_200);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

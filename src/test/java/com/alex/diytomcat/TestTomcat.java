@@ -231,6 +231,13 @@ public class TestTomcat {
     }
 
     @Test
+    public void testClientJump() {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, "/javaweb/jump1");
+        String http_servlet = getHttpString(url);
+        System.out.println(http_servlet);
+        Assert.assertTrue(http_servlet.contains("HTTP/1.1 302 Found"));
+    }
+
     public void testJsp() {
         String html = getContentString("/javaweb/");
         System.out.println(html);

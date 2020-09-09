@@ -13,6 +13,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j2;
+import org.apache.jasper.JspC;
+import org.apache.jasper.compiler.JspRuntimeContext;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -103,6 +105,8 @@ public class Context {
             contextFileChangeWatcher = new ContextFileChangeWatcher(this);
             contextFileChangeWatcher.start();
         }
+        JspC c = new JspC();
+        new JspRuntimeContext(servletContext, c);
         log.info("Deployment of web application directory {} finished in {} ms", this.getDocBase(), timeInterval.intervalMs());
     }
 

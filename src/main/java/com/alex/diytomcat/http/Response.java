@@ -43,6 +43,9 @@ public class Response extends BaseResponse {
     @Getter
     private List<Cookie> cookies;
 
+    @Getter
+    private String redirectPath;
+
     public Response() {
         this.stringWriter = new StringWriter();
         this.writer = new PrintWriter(stringWriter);
@@ -86,6 +89,10 @@ public class Response extends BaseResponse {
             }
         }
         return sb.toString();
+    }
+
+    public void sendRedirect(String redirect) {
+        this.redirectPath = redirect;
     }
 
 }

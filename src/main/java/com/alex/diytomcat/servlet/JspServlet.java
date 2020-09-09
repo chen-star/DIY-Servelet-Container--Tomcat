@@ -2,9 +2,12 @@ package com.alex.diytomcat.servlet;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
+import com.alex.diytomcat.catalina.Context;
+import com.alex.diytomcat.classloader.JspClassLoader;
 import com.alex.diytomcat.http.Request;
 import com.alex.diytomcat.http.Response;
 import com.alex.diytomcat.util.Constants;
+import com.alex.diytomcat.util.JspUtil;
 import com.alex.diytomcat.util.WebXmlUtil;
 
 import javax.servlet.ServletException;
@@ -44,20 +47,48 @@ public class JspServlet extends HttpServlet {
             String fileName = StrUtil.removePrefix(uri, "/");
             File file = FileUtil.file(request.getRealPath(fileName));
 
-            if (file.exists()) {
+            System.out.println("JSP file name " + fileName);
+
+            File jspFile = file;
+            if (jspFile.exists()) {
+                Context context = request.getContext();
+                String path = context.getPath();
+                String subFolder;
+                if ("/".equals(path))
+                    subFolder = "_";
+                else
+                    subFolder = StrUtil.subAfter(path, '/', false);
+
+                String servletClassPath = JspUtil.getServletClassPath(uri, subFolder);
+                File jspServletClassFile = new File(servletClassPath);
+                if (!jspServletClassFile.exists()) {
+                    JspUtil.compileJsp(context, jspFile);
+                } else if (jspFile.lastModified() > jspServletClassFile.lastModified()) {
+                    JspUtil.compileJsp(context, jspFile);
+                    JspClassLoader.invalidJspClassLoader(uri, context);
+                }
+
                 String extName = FileUtil.extName(file);
                 String mimeType = WebXmlUtil.getMimeType(extName);
                 response.setContentType(mimeType);
 
-                byte body[] = FileUtil.readBytes(file);
-                response.setBody(body);
+                JspClassLoader jspClassLoader = JspClassLoader.getJspClassLoader(uri, context);
+                String jspServletClassName = JspUtil.getJspServletClassName(uri, subFolder);
+                Class jspServletClass = jspClassLoader.loadClass(jspServletClassName);
 
-                response.setStatus(Constants.CODE_200);
+                HttpServlet servlet = context.getServlet(jspServletClass);
+                servlet.service(request, response);
+
+                if (null != response.getRedirectPath()) {
+                    response.setStatus(Constants.CODE_302);
+                } else {
+                    response.setStatus(Constants.CODE_200);
+                }
             } else {
                 response.setStatus(Constants.CODE_404);
             }
-
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }

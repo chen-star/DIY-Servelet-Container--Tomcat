@@ -43,6 +43,9 @@ public class Constants {
                     "Content-Type: {}{}" +
                     "\r\n\r\n";
 
+    public static final String response_header_302 =
+            "HTTP/1.1 302 Found\r\nLocation: {}\r\n\r\n";
+
     public static final String response_header_404 = "HTTP/1.1 404 Not Found\r\n" +
             "Content-Type: text/html\r\n\r\n";
 
