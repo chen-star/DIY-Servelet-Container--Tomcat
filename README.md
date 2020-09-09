@@ -38,6 +38,10 @@ Client ------------>  Servlet Container-
 
 ~~~
 
+## Structure
+
+![](src/main/resources/img/structure.png)
+
 ---
 
 ## Features
@@ -59,7 +63,7 @@ Simply put, Auto Reload feature in Tomcat is to ask Tomcat monitor classes direc
 Rely on Tomcat Jasper
 
 
-##### Filter
+#### Filter
 
 ~~~xml
     <filter>
