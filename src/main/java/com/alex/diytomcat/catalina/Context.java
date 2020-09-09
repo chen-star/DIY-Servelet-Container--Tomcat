@@ -3,6 +3,7 @@ package com.alex.diytomcat.catalina;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alex.diytomcat.classloader.WebappClassLoader;
 import com.alex.diytomcat.exception.WebConfigDuplicationException;
@@ -20,6 +21,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import javax.servlet.Filter;
+import javax.servlet.FilterConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -72,6 +75,14 @@ public class Context {
     private Map<String, String> className_servletName;
     private Map<String, Map<String, String>> servlet_className_init_params;
 
+    // filter related
+    private Map<String, List<String>> url_filterClassName;
+    private Map<String, List<String>> url_FilterNames;
+    private Map<String, String> filterName_className;
+    private Map<String, String> className_filterName;
+    private Map<String, Map<String, String>> filter_className_init_params;
+    private Map<String, Filter> filterPool;
+
     public Context(String path, String docBase, Host host, boolean reloadable) {
         TimeInterval timeInterval = DateUtil.timer();
         this.path = path;
@@ -89,6 +100,13 @@ public class Context {
         this.servletContext = new ApplicationContext(this);
         this.servletPool = new HashMap<>();
         this.loadOnStartupServletClassNames = new ArrayList<>();
+
+        this.url_filterClassName = new HashMap<>();
+        this.url_FilterNames = new HashMap<>();
+        this.filterName_className = new HashMap<>();
+        this.className_filterName = new HashMap<>();
+        this.filter_className_init_params = new HashMap<>();
+        this.filterPool = new HashMap<>();
 
         deploy();
     }
@@ -147,6 +165,9 @@ public class Context {
         Document d = Jsoup.parse(xml);
         parseServletMapping(d);
         parseServletInitParams(d);
+        parseFilterMapping(d);
+        parseFilterInitParams(d);
+        initFilter();
         parseLoadOnStartup(d);
         handleLoadOnStartup();
     }
@@ -160,6 +181,92 @@ public class Context {
             } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | ServletException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void initFilter() {
+        Set<String> classNames = className_filterName.keySet();
+        for (String className : classNames) {
+            try {
+                Class clazz = this.webappClassLoader.loadClass(className);
+                Map<String, String> initParameters = filter_className_init_params.get(className);
+                String filterName = className_filterName.get(className);
+                FilterConfig filterConfig = new StandardFilterConfig(servletContext, filterName, initParameters);
+                Filter filter = filterPool.get(clazz);
+                if (null == filter) {
+                    filter = (Filter) ReflectUtil.newInstance(clazz);
+                    filter.init(filterConfig);
+                    filterPool.put(className, filter);
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    public void parseFilterMapping(Document d) {
+        // filter_url_name
+        Elements mappingurlElements = d.select("filter-mapping url-pattern");
+        for (Element mappingurlElement : mappingurlElements) {
+            String urlPattern = mappingurlElement.text();
+            String filterName = mappingurlElement.parent().select("filter-name").first().text();
+
+            List<String> filterNames = url_FilterNames.get(urlPattern);
+            if (null == filterNames) {
+                filterNames = new ArrayList<>();
+                url_FilterNames.put(urlPattern, filterNames);
+            }
+            filterNames.add(filterName);
+        }
+        // class_name_filter_name
+        Elements filterNameElements = d.select("filter filter-name");
+        for (Element filterNameElement : filterNameElements) {
+            String filterName = filterNameElement.text();
+            String filterClass = filterNameElement.parent().select("filter-class").first().text();
+            filterName_className.put(filterName, filterClass);
+            className_filterName.put(filterClass, filterName);
+        }
+        // url_filterClassName
+
+        Set<String> urls = url_FilterNames.keySet();
+        for (String url : urls) {
+            List<String> filterNames = url_FilterNames.get(url);
+            if (null == filterNames) {
+                filterNames = new ArrayList<>();
+                url_FilterNames.put(url, filterNames);
+            }
+            for (String filterName : filterNames) {
+                String filterClassName = filterName_className.get(filterName);
+                List<String> filterClassNames = url_filterClassName.get(url);
+                if (null == filterClassNames) {
+                    filterClassNames = new ArrayList<>();
+                    url_filterClassName.put(url, filterClassNames);
+                }
+                filterClassNames.add(filterClassName);
+            }
+        }
+    }
+
+    private void parseFilterInitParams(Document d) {
+        Elements filterClassNameElements = d.select("filter-class");
+        for (Element filterClassNameElement : filterClassNameElements) {
+            String filterClassName = filterClassNameElement.text();
+
+            Elements initElements = filterClassNameElement.parent().select("init-param");
+            if (initElements.isEmpty())
+                continue;
+
+
+            Map<String, String> initParams = new HashMap<>();
+
+            for (Element element : initElements) {
+                String name = element.select("param-name").get(0).text();
+                String value = element.select("param-value").get(0).text();
+                initParams.put(name, value);
+            }
+
+            filter_className_init_params.put(filterClassName, initParams);
+
         }
     }
 
@@ -241,6 +348,46 @@ public class Context {
             }
         }
     }
+
+    public List<Filter> getMatchedFilters(String uri) {
+        List<Filter> filters = new ArrayList<>();
+        Set<String> patterns = url_filterClassName.keySet();
+        Set<String> matchedPatterns = new HashSet<>();
+        for (String pattern : patterns) {
+            if (match(pattern, uri)) {
+                matchedPatterns.add(pattern);
+            }
+        }
+        Set<String> matchedFilterClassNames = new HashSet<>();
+        for (String pattern : matchedPatterns) {
+            List<String> filterClassName = url_filterClassName.get(pattern);
+            matchedFilterClassNames.addAll(filterClassName);
+        }
+        for (String filterClassName : matchedFilterClassNames) {
+            Filter filter = filterPool.get(filterClassName);
+            filters.add(filter);
+        }
+        return filters;
+    }
+
+    private boolean match(String pattern, String uri) {
+        // Exact Match
+        if (StrUtil.equals(pattern, uri))
+            return true;
+        // /*
+        if (StrUtil.equals(pattern, "/*"))
+            return true;
+        // /*.jsp
+        if (StrUtil.startWith(pattern, "/*.")) {
+            String patternExtName = StrUtil.subAfter(pattern, '.', false);
+            String uriExtName = StrUtil.subAfter(uri, '.', false);
+            if (StrUtil.equals(patternExtName, uriExtName))
+                return true;
+        }
+        // For simplicity, ignore other patterns
+        return false;
+    }
+
 
     private void destroyServlets() {
         Collection<HttpServlet> servlets = servletPool.values();

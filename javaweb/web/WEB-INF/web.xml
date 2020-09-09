@@ -99,4 +99,33 @@
         <url-pattern>/jump2</url-pattern>
     </servlet-mapping>
 
+
+    <filter>
+        <filter-name>URLFilter</filter-name>
+        <filter-class>com.alex.javaweb.URLFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>URLFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>PfmFilter</filter-name>
+        <filter-class>com.alex.javaweb.PfmFilter</filter-class>
+        <init-param>
+            <param-name>author</param-name>
+            <param-value>Alex(filter)</param-value>
+        </init-param>
+        <init-param>
+            <param-name>site</param-name>
+            <param-value>https://coolestalextech.com/</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>PfmFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>cn.alex.javaweb.ContextListener</listener-class>
+    </listener>
 </web-app>

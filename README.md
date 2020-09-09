@@ -59,6 +59,27 @@ Simply put, Auto Reload feature in Tomcat is to ask Tomcat monitor classes direc
 Rely on Tomcat Jasper
 
 
+##### Filter
+
+~~~xml
+    <filter>
+        <filter-name>URLFilter</filter-name>
+        <filter-class>com.alex.javaweb.URLFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>URLFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+~~~
+
+Based on Chain of Responsibility Design Pattern
+
+Before actually handing requests over to corresponding servlets, Tomcat will first loop all configed filters. After went through all filters, the servlet actually cope with the requests.
+
+
+---
+
 ## Tomcat Components
 
 **server.xml structure**

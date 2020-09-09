@@ -12,11 +12,14 @@ import com.alex.diytomcat.util.Constants;
 import com.alex.diytomcat.util.SessionManager;
 import lombok.extern.log4j.Log4j2;
 
+import javax.servlet.Filter;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
  * @author : alexchen
@@ -38,14 +41,18 @@ public class HttpProcessor {
             prepareSession(request, response);
 
             String servletClassName = context.getServletClassName(uri);
+            HttpServlet workingServlet;
 
-            if (null != servletClassName) {
-                InvokerServlet.getInstance().service(request, response);
-            } else if (uri.endsWith(".jsp")) {
-                JspServlet.getInstance().service(request, response);
-            } else {
-                DefaultServlet.getInstance().service(request, response);
-            }
+            if (null != servletClassName)
+                workingServlet = InvokerServlet.getInstance();
+            else if (uri.endsWith(".jsp"))
+                workingServlet = JspServlet.getInstance();
+            else
+                workingServlet = DefaultServlet.getInstance();
+
+            List<Filter> filters = request.getContext().getMatchedFilters(request.getRequestURI());
+            ApplicationFilterChain filterChain = new ApplicationFilterChain(filters, workingServlet);
+            filterChain.doFilter(request, response);
 
             if (request.isForwarded())
                 return;
