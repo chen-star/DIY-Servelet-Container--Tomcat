@@ -238,6 +238,21 @@ public class TestTomcat {
         Assert.assertTrue(http_servlet.contains("HTTP/1.1 302 Found"));
     }
 
+    @Test
+    public void testServerJump() {
+        String url = StrUtil.format("http://{}:{}{}", ip, port, "/javaweb/jump2");
+        String http_servlet = getHttpString(url);
+        Assert.assertTrue(http_servlet.contains("Hello DIY Tomcat from HelloServlet"));
+    }
+
+    @Test
+    public void testServerJumpWithAttributes(){
+        String url = StrUtil.format("http://{}:{}{}", ip, port, "/javaweb/jump2");
+        String http_servlet = getHttpString(url);
+        System.out.println(http_servlet);
+        Assert.assertTrue(http_servlet.contains("Hello DIY Tomcat from HelloServlet@javawebcom.alex.javaweb.HelloServlet"));
+    }
+
     public void testJsp() {
         String html = getContentString("/javaweb/");
         System.out.println(html);

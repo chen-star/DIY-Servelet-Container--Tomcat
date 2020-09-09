@@ -13,6 +13,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j2;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpSession;
@@ -37,11 +38,13 @@ public class Request extends BaseRequest {
     private String requestString;
 
     @Getter
+    @Setter
     private String uri;
 
     @Getter
     private String method;
 
+    @Getter
     private Socket socket;
 
     @Getter
@@ -66,11 +69,18 @@ public class Request extends BaseRequest {
     @Setter
     private HttpSession session;
 
+    @Getter
+    @Setter
+    private boolean forwarded;
+
+    private Map<String, Object> attributesMap;
+
     public Request(Socket socket, Connector connector) throws IOException {
         this.socket = socket;
         this.connector = connector;
         this.parameterMap = new HashMap<>();
         this.headerMap = new HashMap<>();
+        this.attributesMap = new HashMap<>();
         parseHttpRequest();
         if (StrUtil.isEmpty(requestString)) {
             return;
@@ -329,5 +339,26 @@ public class Request extends BaseRequest {
 
     public String getServletPath() {
         return uri;
+    }
+
+    public RequestDispatcher getRequestDispatcher(String uri) {
+        return new ApplicationRequestDispatcher(uri);
+    }
+
+    public void removeAttribute(String name) {
+        attributesMap.remove(name);
+    }
+
+    public void setAttribute(String name, Object value) {
+        attributesMap.put(name, value);
+    }
+
+    public Object getAttribute(String name) {
+        return attributesMap.get(name);
+    }
+
+    public Enumeration<String> getAttributeNames() {
+        Set<String> keys = attributesMap.keySet();
+        return Collections.enumeration(keys);
     }
 }

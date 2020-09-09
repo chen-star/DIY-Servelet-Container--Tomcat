@@ -79,6 +79,7 @@
         <url-pattern>/getSession</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
         <servlet-name>ClientJumpServlet</servlet-name>
         <servlet-class>com.alex.javaweb.ClientJumpServlet</servlet-class>
@@ -86,6 +87,16 @@
     <servlet-mapping>
         <servlet-name>ClientJumpServlet</servlet-name>
         <url-pattern>/jump1</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServerJumpServlet</servlet-name>
+        <servlet-class>com.alex.javaweb.ServerJumpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServerJumpServlet</servlet-name>
+        <url-pattern>/jump2</url-pattern>
     </servlet-mapping>
 
 </web-app>

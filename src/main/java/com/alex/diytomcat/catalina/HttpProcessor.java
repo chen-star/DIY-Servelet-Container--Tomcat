@@ -47,6 +47,9 @@ public class HttpProcessor {
                 DefaultServlet.getInstance().service(request, response);
             }
 
+            if (request.isForwarded())
+                return;
+
             if (response.getStatus() == Constants.CODE_200) {
                 handle200(s, request, response);
                 return;
