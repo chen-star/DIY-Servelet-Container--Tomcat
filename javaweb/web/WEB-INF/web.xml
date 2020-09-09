@@ -126,6 +126,6 @@
     </filter-mapping>
 
     <listener>
-        <listener-class>cn.alex.javaweb.ContextListener</listener-class>
+        <listener-class>com.alex.javaweb.ContextListener</listener-class>
     </listener>
 </web-app>

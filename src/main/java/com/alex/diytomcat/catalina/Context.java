@@ -3,6 +3,7 @@ package com.alex.diytomcat.catalina;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.date.TimeInterval;
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.io.IORuntimeException;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import com.alex.diytomcat.classloader.WebappClassLoader;
@@ -21,10 +22,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
 import java.io.File;
 import java.util.*;
@@ -83,6 +81,9 @@ public class Context {
     private Map<String, Map<String, String>> filter_className_init_params;
     private Map<String, Filter> filterPool;
 
+    // listener related
+    private List<ServletContextListener> listeners;
+
     public Context(String path, String docBase, Host host, boolean reloadable) {
         TimeInterval timeInterval = DateUtil.timer();
         this.path = path;
@@ -108,6 +109,8 @@ public class Context {
         this.filter_className_init_params = new HashMap<>();
         this.filterPool = new HashMap<>();
 
+        this.listeners = new ArrayList<>();
+
         deploy();
     }
 
@@ -118,6 +121,7 @@ public class Context {
     private void deploy() {
         TimeInterval timeInterval = DateUtil.timer();
         log.info("Deploying web application directory {} for the path {}", this.docBase, this.path);
+        loadListeners();
         init();
         if (reloadable) {
             contextFileChangeWatcher = new ContextFileChangeWatcher(this);
@@ -133,6 +137,7 @@ public class Context {
     }
 
     public void stop() {
+        fireEvent("destroy");
         webappClassLoader.stop();
         contextFileChangeWatcher.stop();
         destroyServlets();
@@ -150,6 +155,7 @@ public class Context {
     }
 
     private void init() {
+        fireEvent("init");
         if (!contextWebXmlFile.exists()) {
             return;
         }
@@ -393,6 +399,41 @@ public class Context {
         Collection<HttpServlet> servlets = servletPool.values();
         for (HttpServlet servlet : servlets) {
             servlet.destroy();
+        }
+    }
+
+    public void addListener(ServletContextListener listener) {
+        listeners.add(listener);
+    }
+
+    private void loadListeners() {
+        try {
+            if (!contextWebXmlFile.exists())
+                return;
+            String xml = FileUtil.readUtf8String(contextWebXmlFile);
+            Document d = Jsoup.parse(xml);
+
+            Elements es = d.select("listener listener-class");
+            for (Element e : es) {
+                String listenerClassName = e.text();
+
+                Class<?> clazz = this.webappClassLoader.loadClass(listenerClassName);
+                ServletContextListener listener = (ServletContextListener) clazz.newInstance();
+                addListener(listener);
+
+            }
+        } catch (IORuntimeException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void fireEvent(String type) {
+        ServletContextEvent event = new ServletContextEvent(servletContext);
+        for (ServletContextListener servletContextListener : listeners) {
+            if ("init".equals(type))
+                servletContextListener.contextInitialized(event);
+            if ("destroy".equals(type))
+                servletContextListener.contextDestroyed(event);
         }
     }
 }
