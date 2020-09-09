@@ -31,8 +31,8 @@ Servlets are under the control of another Java Application called a ***Servlet C
 
 ~~~
                                                  -----------> Servelt 1
-		  request                        |
-Client ------------>  Servlet Container-
+          request                                |
+Client ------------>  Servlet Container----------
 		                                 |
 						 -----------> Servlet 2
 
