@@ -38,6 +38,14 @@ Client ------------>  Servlet Container----------
 
 ~~~
 
+#### Design Pattern
+
+* Responsibility Chain - filter
+
+* Observer - listen on servelt lifecycle events
+
+* Template - Servlet init()，service()，destory()
+
 ## Structure
 
 ![](src/main/resources/img/structure.png)
@@ -96,7 +104,7 @@ Before actually handing requests over to corresponding servlets, Tomcat will fir
     <Service name="Catalina">
         <Engine defaultHost="localhost">
             <Host name="localhost">
-                <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b"/>
+                <Context path="/b" docBase="/Users/alexchen/programs/diytomcat/b" reloadable = "true"/>
             </Host>
         </Engine>
     </Service>
